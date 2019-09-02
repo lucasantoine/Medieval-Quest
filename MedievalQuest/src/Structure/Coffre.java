@@ -2,10 +2,12 @@ package Structure;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Coffre {
 	public static final Random R = new Random();
 	public ArrayList<String> stat = new ArrayList<>();
+	private Scanner sc = new Scanner(System.in);
 	
 	public Coffre() {
 		this.stat.add("Vie");
@@ -25,6 +27,8 @@ public class Coffre {
 		}
 		System.out.println();
 		System.out.println("Appuyez sur <Entrée> pour continuer.");
+		sc.nextLine();
+		sc.close();
 	}
 	
 	public boolean bonus() {
