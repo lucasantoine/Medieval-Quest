@@ -16,6 +16,10 @@ public class Statistique {
 		val += n;
 	}
 	
+	public void setValue(int n) {
+		val = n;
+	}
+	
 	public int getValue() {
 		return val;
 	}
