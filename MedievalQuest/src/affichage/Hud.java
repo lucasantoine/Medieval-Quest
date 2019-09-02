@@ -1,15 +1,16 @@
 package affichage;
 
+import util.EStat;
 import util.Statistique;
 
 public class Hud {
 	private Statistique[] stats = new Statistique[4];	
 	
 	public Hud(int vie, int attaque, int defense, int argent) {
-		this.stats[0] = new Statistique("♥", vie);
-		this.stats[1] = new Statistique("⚔", attaque);
-		this.stats[2] = new Statistique("def", defense);
-		this.stats[3] = new Statistique("$", argent);
+		this.stats[0] = new Statistique("♥", EStat.VIE);
+		this.stats[1] = new Statistique("⚔", EStat.ATK);
+		this.stats[2] = new Statistique("def", EStat.DEF);
+		this.stats[3] = new Statistique("$", EStat.ARG);
 	}
 	
 	public Hud() {
