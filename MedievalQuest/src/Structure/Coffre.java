@@ -6,9 +6,11 @@ import java.util.Scanner;
 
 public class Coffre {
 	public static final String BKN = System.getProperty("line.separator");
+	
 	public static final Random R = new Random();
 	public ArrayList<String> stat = new ArrayList<>();
 	private Scanner sc = new Scanner(System.in);
+	
 	private String image = "       ____...------------...____"
 			+ BKN + "  _.-\"` /o/__ ____ __ __  __ \\o\\_`\"-._"
 			+ BKN + ".'     / /                    \\ \\     '."

@@ -4,6 +4,7 @@ import Structure.Coffre;
 import Structure.Heros;
 import affichage.Hud;
 import interaction.Saisie;
+import menu.EcranTitre;
 
 public class Game {
 	public static void main(String[] args) {

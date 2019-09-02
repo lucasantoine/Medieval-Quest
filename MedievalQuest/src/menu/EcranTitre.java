@@ -1,4 +1,4 @@
-package main;
+package menu;
 
 import java.util.Scanner;
 
@@ -21,6 +21,10 @@ public class EcranTitre {
 		Scanner sc = new Scanner(System.in);
 		sc.nextLine();
 		sc.close();
+		
+		for(int i=0 ; i<100 ; i++) {
+			System.out.println("");
+		}
 		
 	}
 	
