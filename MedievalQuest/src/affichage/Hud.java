@@ -14,6 +14,13 @@ public class Hud {
 		defense = new Statistique("def");
 		argent = new Statistique("$");
 	}
+	
+	public Hud(int vie, int attaque, int defense, int argent) {
+		this.vie = new Statistique("♥", vie);
+		this.attaque = new Statistique("⚔", attaque);
+		this.defense = new Statistique("def", defense);
+		this.argent = new Statistique("$", argent);
+	}
 
 	public Statistique getVie() {
 		return vie;
@@ -32,9 +39,9 @@ public class Hud {
 	}
 	
 	public String toString() {
-		return vie.toString() + "     |     "
-	+ attaque.toString() + "     |     "
-				+ defense.toString() + "     |     "
-	+ argent.toString() + "\n\n_____________________";
+		return vie.toString() + "          |          "
+	+ attaque.toString() + "          |          "
+				+ defense.toString() + "          |          "
+	+ argent.toString() + "\n\n----------------------------------------------------------------------------";
 	}
 }
