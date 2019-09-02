@@ -5,7 +5,7 @@ public class Statistique {
 	
 	public Statistique(String unite) {
 		this.unite = unite;
-		
+		this.val = 0;		
 	}
 	
 	public void add(int n) {
