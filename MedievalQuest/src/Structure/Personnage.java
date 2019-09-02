@@ -36,12 +36,10 @@ public abstract class Personnage {
 		
 		if(saisieToString == 1) {
 			this.setHud(new Hud(10, 5, 5, 5));
-		}else if(saisieToString == 1) {
+		}else if(saisieToString == 2) {
 			this.setHud(new Hud(5, 10, 5, 5));
-		}else if(saisieToString == 1) {
+		}else if(saisieToString == 3) {
 			this.setHud(new Hud(5, 5, 10, 5));
-		}else if(saisieToString == 1) {
-			this.setHud(new Hud(5, 5, 5, 10));
 		}
 	}
 
