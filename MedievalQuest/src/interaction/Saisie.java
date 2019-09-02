@@ -10,7 +10,7 @@ public class Saisie {
 	 * @param maxVal
 	 * @return boolean
 	 */
-	private boolean saisieValide(String s, int maxVal) {
+	private static boolean saisieValide(String s, int maxVal) {
 		boolean valide = false;
 		
 		if(s.length() == 1) {
@@ -33,7 +33,7 @@ public class Saisie {
 	 * @param maxVal
 	 * @return String
 	 */
-	public String saisie(String messageToShow, int maxVal) {
+	public static String saisie(String messageToShow, int maxVal) {
 		boolean valide = false;
 		Scanner sc = new Scanner(System.in);
 		String saisieUser = ""; 
@@ -44,12 +44,24 @@ public class Saisie {
 			}
 			saisieUser = sc.nextLine();
 			
-			valide = this.saisieValide(saisieUser, maxVal);
+			valide = Saisie.saisieValide(saisieUser, maxVal);
 		}
 
 		sc.close();
 		
 		return saisieUser;
+	}
+	
+	public static int stringToInt(String saisie) {
+		int res = -1;
+		
+		if(saisie.length() >0) {	
+			char firstChar = saisie.charAt(0);
+		
+			res = firstChar - 0;
+		}
+		
+		return res;
 	}
 	
 	/**
