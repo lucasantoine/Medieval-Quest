@@ -1,11 +1,35 @@
 package interaction;
 
-//TODO : sorcière, garde
-
 public class AsciiArt {
 
 	public static final String BKN = System.getProperty("line.separator");
 
+	public static void sorciere() {
+		System.out.println("                             __..--,"
+				+ BKN + "                          .-'     /"
+				+ BKN + "                        .`       /"
+				+ BKN + "                       /         |"
+				+ BKN + "                      /==========|"
+				+ BKN + "              _______/___________|______"
+				+ BKN + "            '-------<<<<<<<<<<<<<\\------'"
+				+ BKN + "                 ,--'a <<<<<<<<<<<<"
+				+ BKN + "                (___.    >>>>>>>>>>>"
+				+ BKN + "                 .--'--' <<<<<<<<<<<"
+				+ BKN + "                 `--,___,>>>>>>>>>>"
+				+ BKN + "                   _,-'         '."
+				+ BKN + "             _.--''    _.-'       \\"
+				+ BKN + "           .'      _.-' \\          \\"
+				+ BKN + "(`'--..__  /'-,__.' ,-~~`.          |"
+				+ BKN + " `'--..__`'--..__ ,'      `-        |"
+				+ BKN + "         `'--..__/    .'           /"
+				+ BKN + "                |          ,      /  ,\\/.___"
+				+ BKN + "                `-._      |\\      ('-.\\|=-._`=-._"
+				+ BKN + "                 /  (`-.__/-`-,___;-.>/=-._=-._=._"
+				+ BKN + "               _/-` | /  (           /|'_=-._=-._"
+				+ BKN + "              /___/Y_/-` |            `=-._=-._="
+				+ BKN + "                   /___/Y                  =-.");
+	}
+	
 	public static void mendiant() {
 		System.out.println("        _,._"
 				+ BKN + "      ,'   ,`-."
@@ -102,10 +126,35 @@ public class AsciiArt {
 				+ BKN + "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"");
 	}
 
-	public static void main(String[] args) {
-		//AsciiArt.mendiant();
-		//AsciiArt.hero();
-		//AsciiArt.coffre();
-		//AsciiArt.auberge();
+	public static void garde() {
+		System.out.println("  ,   A           {}"
+				+ BKN + " / \\, | ,        .--."
+				+ BKN + "|    =|= >      /.--.\\"
+				+ BKN + " \\ /` | `       |====|"
+				+ BKN + "  `   |         |`::`|"
+				+ BKN + "      |     .-;`\\..../`;_.-^-._"
+				+ BKN + "     /\\\\/  /  |...::..|   /:\\  `|"
+				+ BKN + "     |:'\\ |   /'''::''| /.:::.\\ |"
+				+ BKN + "      \\ /\\;-,/\\   ::  |/:::::::\\|"
+				+ BKN + "      |\\ <` >  >._::_.|   |||   |"
+				+ BKN + "      | `\"\"`  /   ^^  |   |||   |"
+				+ BKN + "      |       |       \\   |||   /"
+				+ BKN + "      |       |        \\  |||  /"
+				+ BKN + "      |       |___/\\___|`-._.-`"
+				+ BKN + "      |        \\_ || _/"
+				+ BKN + "      |        <_ >< _>"
+				+ BKN + "      |        |  ||  |"
+				+ BKN + "      |        |  ||  |"
+				+ BKN + "      |       _\\.:||:./_"
+				+ BKN + "      |      /____/\\____\\");
 	}
+	
+	/*public static void main(String[] args) {
+		AsciiArt.sorciere();
+		AsciiArt.mendiant();
+		AsciiArt.hero();
+		AsciiArt.coffre();
+		AsciiArt.auberge();
+		AsciiArt.garde();
+	}*/
 }
