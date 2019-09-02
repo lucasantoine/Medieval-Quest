@@ -69,8 +69,7 @@ public class Saisie {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Saisie s = new Saisie();
-		String saisie = s.saisie("Que faites vous (1, 2 ou 3) : ", 1);
+		String saisie = Saisie.saisie("Que faites vous (1, 2 ou 3) : ", 1);
 		System.out.println("Vous avez saisie : " + saisie);
 	}
 }
