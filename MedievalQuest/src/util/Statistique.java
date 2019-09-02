@@ -4,8 +4,12 @@ public class Statistique {
 	private int val;
 	
 	public Statistique(String unite) {
+		this(unite, 0);	
+	}
+	
+	public Statistique(String unite, int val) {
 		this.unite = unite;
-		this.val = 0;		
+		this.val = val;		
 	}
 	
 	public void add(int n) {
