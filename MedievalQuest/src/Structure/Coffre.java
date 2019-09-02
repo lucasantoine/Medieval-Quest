@@ -17,9 +17,11 @@ public class Coffre {
 	public void ouvrirCoffre(Personnage p) {
 		int tmp = R.nextInt(4);
 		if(this.bonus()) {
-			System.out.println("Vous gagnez 10 "+stat.get(tmp));
+			System.out.println("Vous gagnez 10 "+p.getHud().getStats()[tmp].getUnite());
+			p.getHud().getStats()[tmp].add(10);
 		} else {
-			System.out.println("Vous perdez 5 "+stat.get(tmp));
+			System.out.println("Vous perdez 5 "+p.getHud().getStats()[tmp].getUnite());
+			p.getHud().getStats()[tmp].add(-5);
 		}
 		System.out.println();
 		System.out.println("Appuyez sur <Entrée> pour continuer.");

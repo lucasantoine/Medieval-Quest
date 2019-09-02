@@ -3,45 +3,27 @@ package affichage;
 import util.Statistique;
 
 public class Hud {
-	private Statistique vie;
-	private Statistique attaque;
-	private Statistique defense;
-	private Statistique argent;
-	
-	public Hud() {
-		vie = new Statistique("♥");
-		attaque = new Statistique("⚔");
-		defense = new Statistique("def");
-		argent = new Statistique("$");
-	}
+	private Statistique[] stats = new Statistique[4];	
 	
 	public Hud(int vie, int attaque, int defense, int argent) {
-		this.vie = new Statistique("♥", vie);
-		this.attaque = new Statistique("⚔", attaque);
-		this.defense = new Statistique("def", defense);
-		this.argent = new Statistique("$", argent);
-	}
-
-	public Statistique getVie() {
-		return vie;
-	}
-
-	public Statistique getAttaque() {
-		return attaque;
-	}
-
-	public Statistique getDefense() {
-		return defense;
-	}
-
-	public Statistique getArgent() {
-		return argent;
+		this.stats[0] = new Statistique("♥", vie);
+		this.stats[1] = new Statistique("⚔", attaque);
+		this.stats[2] = new Statistique("def", defense);
+		this.stats[3] = new Statistique("$", argent);
 	}
 	
+	public Hud() {
+		this(10, 10, 10, 10);
+	}
+	
+	public Statistique[] getStats() {
+		return stats;
+	}
+
 	public String toString() {
-		return vie.toString() + "          |          "
-	+ attaque.toString() + "          |          "
-				+ defense.toString() + "          |          "
-	+ argent.toString() + "\n\n----------------------------------------------------------------------------";
+		return stats[0].toString() + "          |          "
+	+ stats[1].toString() + "          |          "
+				+ stats[2].toString() + "          |          "
+	+ stats[3].toString() + "\n\n----------------------------------------------------------------------------";
 	}
 }
