@@ -31,15 +31,15 @@ public abstract class Personnage {
 	}
 
 	public void choseClasse() {
-		String saisie = Saisie.saisie("Choississez votre Classe : 1 - Tank, 2 - Chevalier, 3 - Assassin", 3);
+		String saisie = Saisie.saisie("Quelle est votre : 1 - Chevalier, 2 - Assassin, 3 - Tank", 3);
 		int saisieToString = Saisie.stringToInt(saisie);
 		
 		if(saisieToString == 1) {
-			this.setHud(new Hud(10, 5, 5, 5));
+			this.setHud(new Hud(10, 5, 5, 500));
 		}else if(saisieToString == 2) {
-			this.setHud(new Hud(5, 10, 5, 5));
+			this.setHud(new Hud(5, 10, 5, 500));
 		}else if(saisieToString == 3) {
-			this.setHud(new Hud(5, 5, 10, 5));
+			this.setHud(new Hud(5, 5, 10, 500));
 		}
 	}
 	
