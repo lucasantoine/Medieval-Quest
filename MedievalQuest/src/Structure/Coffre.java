@@ -5,9 +5,26 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Coffre {
+	public static final String BKN = System.getProperty("line.separator");
 	public static final Random R = new Random();
 	public ArrayList<String> stat = new ArrayList<>();
 	private Scanner sc = new Scanner(System.in);
+	private String image = "       ____...------------...____"
+			+ BKN + "  _.-\"` /o/__ ____ __ __  __ \\o\\_`\"-._"
+			+ BKN + ".'     / /                    \\ \\     '."
+			+ BKN + "|=====/o/======================\\o\\=====|"
+			+ BKN + "|____/_/________..____..________\\_\\____|"
+			+ BKN + "/   _/ \\_     <_o#\\__/#o_>     _/ \\_   \\"
+			+ BKN + "\\_________       \\####/       _________/"
+			+ BKN + " |===\\!/========================\\!/===|"
+			+ BKN + " |   |=|          .---.         |=|   |"
+			+ BKN + " |===|o|=========/     \\========|o|===|"
+			+ BKN + " |   | |         \\() ()/        | |   |"
+			+ BKN + " |===|o|======{'-.) A (.-'}=====|o|===|"
+			+ BKN + " | __/ \\__     '-.\\uuu/.-'    __/ \\__ | "
+			+ BKN + " |====          .'.'^'.'.         ====|"
+			+ BKN + " |_\\o/     __  {.' __  '.}  __    \\o/_|"
+			+ BKN + " `\"\"\"\"-\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"-\"\"\"\"`";
 	
 	public Coffre() {
 		this.stat.add("Vie");
@@ -38,5 +55,9 @@ public class Coffre {
 	public static void main(String[] args) {
 		Coffre c = new Coffre();
 		c.ouvrirCoffre(new Heros());
+	}
+
+	public String getImage() {
+		return image;
 	}
 }

@@ -42,5 +42,6 @@ public abstract class Personnage {
 			this.setHud(new Hud(5, 5, 10, 5));
 		}
 	}
-
+	
+	public abstract String getImage();
 }
