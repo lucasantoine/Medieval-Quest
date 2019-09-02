@@ -3,14 +3,16 @@ package util;
 public class Statistique {
 	private String unite;
 	private int val;
+	private EStat stat;
 
-	public Statistique(String unite) {
-		this(unite, 0);
+	public Statistique(String unite, EStat stat) {
+		this(unite, 0, stat);
 	}
 
-	public Statistique(String unite, int val) {
+	public Statistique(String unite, int val, EStat stat) {
 		this.unite = unite;
 		this.val = val;
+		this.stat = stat;
 	}
 
 	public void add(int n) {
