@@ -13,8 +13,11 @@ public class Fontaine implements IEvenement {
 		Saisie.clearScreenOpti();
 		System.out.println(p.getHud());
 		AsciiArt.hero_fontaine();
-		System.out.println("\nVous arrivez sur une place avec une fontaine en son centre. Vous remarquez les pièces brillantes qui en tapisse le fond.");
-		String s = Saisie.saisie("Que voulez vous faire ? (1 - Boire l'eau de la fontaine, 2 - Faire un don, 3 - Voler les pièces) : \n", 3);
+		System.out.println("\nVous arrivez sur une place avec une fontaine en son centre. Vous remarquez les pièces brillantes qui en tapisse le fond. Que voulez vous faire ?");
+		System.out.println("   1.Boire l'eau de la fontaine");
+		System.out.println("   2.Faire un don");
+		System.out.println("   3.Voler les pieces");
+		String s = Saisie.saisie("", 3);
 		int choix = Saisie.stringToInt(s);
 		Saisie.clearScreenOpti();
 		Fontaine.getChoix(choix, p);
