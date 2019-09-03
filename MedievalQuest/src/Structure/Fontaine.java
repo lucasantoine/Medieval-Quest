@@ -43,12 +43,12 @@ public class Fontaine implements IEvenement {
 		if(R.nextInt(6)==5) {
 			int tmp = R.nextInt(3);
 			System.out.println("C'est votre jour de chance, le Seigneur vous accorde une bénédiction !");
-			Saisie.pressEnter(p.getHud().getStats()[tmp].getStat().getSymbole()+" + 20", true);
+			Saisie.pressEnter(p.getHud().getStats()[tmp].getStat().getSymbole()+" + 20\n", true);
 			p.getHud().getStats()[tmp].add(20);
 			p.getHud().getStats()[3].add(-1);
 		} else {
 			System.out.println("Malheureusement, rien ne se passe...");
-			Saisie.pressEnter("Vous avez perdu 1 pièce d'or.", true);
+			Saisie.pressEnter("Vous avez perdu 1 pièce d'or.\n", true);
 			p.getHud().getStats()[3].add(-1);
 		}
 	}
