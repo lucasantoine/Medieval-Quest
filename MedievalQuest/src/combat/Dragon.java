@@ -17,9 +17,12 @@ public class Dragon {
 		String phrase = sc.nextLine();
 		
 		Heros boss = new Heros(100, 15, 20, 42);
+		
+		int viebase = boss.getVie();
+		
 		while(p.getVie() > 0 && boss.getVie() > 0) {
 			AsciiArt.hero_bossFinal();
-			Combat.startCombat(p, boss);
+			Combat.startCombat(p, boss, viebase);
 		}
 		
 		

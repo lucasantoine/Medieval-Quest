@@ -14,9 +14,12 @@ public class Sorciere {
 		Saisie.pressEnter("Vous perdez la moitié de votre defense", true);
 		p.setDefense(p.getDef()/2);
 		Heros boss = new Heros(50, 3, 3, 50);
+		
+		int viebase = boss.getVie();
+		
 		while(p.getVie() > 0 && boss.getVie() > 0) {
 			AsciiArt.hero_boss2();
-			Combat.startCombat(p, boss);
+			Combat.startCombat(p, boss, viebase);
 		}
 		
 		Saisie.pressEnter("Vous avez vaincu la sorciere, maintenant vous vous rendez vers la salle du roi pour vaincre le terrible dragon", false);
