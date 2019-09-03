@@ -40,14 +40,14 @@ public class Auberge implements IEvenement{
 		if(tmp == 1) {
 			int pv = p.getVie();
 			p.getHud().setVie(pv-10);
-			System.out.println("Les propri�taires de l'auberge �taient bien arm�s !");
+			System.out.println("\nLes propri�taires de l'auberge �taient bien arm�s !");
 			Saisie.pressEnter("Vous perdez 10 pv\n", false);
 		}
 		
 		if(tmp == 2 || tmp ==0) {
 			int def = p.getDef();
 			p.getHud().setDefense(def + 5); 
-			System.out.println("Vous avez trouv� un bouclier en bois !");
+			System.out.println("\nVous avez trouv� un bouclier en bois !");
 			Saisie.pressEnter("Vous avez gagn� 5 points de d�fense\n", false);
 		}
 	}
