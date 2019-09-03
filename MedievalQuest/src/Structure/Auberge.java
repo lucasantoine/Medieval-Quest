@@ -3,6 +3,7 @@ package Structure;
 import java.util.Random;
 
 import interaction.AsciiArt;
+import interaction.Saisie;
 
 public class Auberge {
 	public static int gainVieDormir = 20;
@@ -51,6 +52,29 @@ public class Auberge {
 		}
 	}
 	
+	public static void auberge(Personnage p) {
+		System.out.println(p.getHud());
+		AsciiArt.auberge();
+		System.out.println("Vous arrivez devant l'auberge. Que souhaitez-vous faire ?");
+		System.out.println("   1. Dormir");
+		System.out.println("   2. Piller");
+		System.out.println("   3. Passer votre chemin");
+		String s = Saisie.saisie("", 3);
+		int choix = Saisie.stringToInt(s);
+		Saisie.clearScreenOpti();
+		if (choix ==1) {
+			Auberge.dormirAuberge(p);
+		}
+		if (choix == 2) {
+			Auberge.pillerAuberge(p);
+		}
+		if (choix ==3) {
+			System.out.println("Vous avez passé votre chemin.");
+		}
+		
+		System.out.println(p.getHud());
+	}
+	
 	
 	
 	
@@ -64,11 +88,7 @@ public class Auberge {
 		Heros p = new Heros();
 		Auberge a = new Auberge();
 		
-		System.out.println(p.getHud());
 		
-		a.getImage();
-		a.dormirAuberge(p);
-		System.out.println(p.getHud());
 	}
 	
 

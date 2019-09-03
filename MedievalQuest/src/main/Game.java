@@ -1,5 +1,6 @@
 package main;
 
+import Structure.Auberge;
 import Structure.Coffre;
 import Structure.Garde;
 import Structure.Heros;
@@ -15,6 +16,12 @@ public class Game {
 		
 		Coffre.coffre(player);
 		
+		if(player.getVie() <= 0 || player.getArg() <= 0) {
+			System.out.println("Vous avez perdu !");
+			System.exit(0);
+		}
+		
+		Auberge.auberge(player);
 		if(player.getVie() <= 0 || player.getArg() <= 0) {
 			System.out.println("Vous avez perdu !");
 			System.exit(0);
