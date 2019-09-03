@@ -1,5 +1,7 @@
 package interaction;
 
+//TODO : le pretre; les combi forgeron et prêtre; le 3e boss + sa combi
+
 public class AsciiArt {
 
 	public static final String BKN = System.getProperty("line.separator");
@@ -53,6 +55,23 @@ public class AsciiArt {
 				+ BKN + "                   /___/Y                  =-.");
 	}
 
+	public static void forgeron() {
+		System.out.println( BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + "                                         _"
+				+ BKN + "                                        //"
+				+ BKN + "                           ___         //"
+				+ BKN + "                          /   \\       //"
+				+ BKN + "                         :   ==\\   <\\//"
+				+ BKN + "  .-------..___           \\____/_.-'_}>"
+				+ BKN + "  '-._     :_.-'        :__<_   :/ \""
+				+ BKN + "   .- ) _ ( --.         /.--.\\  |"
+				+ BKN + "  :  '-' '-'  ;.       { \\>  |  |"
+				+ BKN + " /'-.._____.-' |    `. |._|  |  |"
+				+ BKN + " |   |     \\   |      \\ ' '  \\  |     `."
+				+ BKN + " \\   |     /   \\       ,)'| .__,_\\"
+				+ BKN + " |   \\     )_.-'   - ,'_._\\  \"'-=-i\"\" ----"
+				+ BKN + " '-._/__..-'         _,. -'''");
+	}
+	
 	public static void mendiant() {
 		System.out.println(
 				BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + "        _,._"
@@ -203,6 +222,31 @@ public class AsciiArt {
 				+ BKN + "                \\_      :)8888888888888888888a."
 				+ BKN + "               /` `-----'  `Y88888888888888888"
 				+ BKN + "               \\____|         `88888888888P'");
+	}
+	
+	public static void pretre() {
+		System.out.println( BKN + BKN + BKN + BKN + "           .---."
+				+ BKN + "         /` ___|`\\"
+				+ BKN + "         |_/    \\|"
+				+ BKN + "         (  -/-  )"
+				+ BKN + "          \\_ - _/"
+				+ BKN + "         .-'|_|'-."
+				+ BKN + "        /         \\"
+				+ BKN + "       /     O     \\"
+				+ BKN + "      / _____!_____ \\"
+				+ BKN + "     /.-------------.\\"
+				+ BKN + "     \\|     ,;,     |/"
+				+ BKN + "      |     ;;;     |"
+				+ BKN + "      |  ;;;;;;;;;  |"
+				+ BKN + "      |   `';;;'`   |"
+				+ BKN + "      |     ;;;     |"
+				+ BKN + "      |     ;;;     |"
+				+ BKN + "      |     :::     |"
+				+ BKN + "      |     ';'     |"
+				+ BKN + "      |             |"
+				+ BKN + "     _| _  __   __ _|_"
+				+ BKN + "   _/ _  __  ___  __ _\\_"
+				+ BKN + " _/ __  ___  _ ___ __ _ \\_");
 	}
 	
 	public static void hero_coffre() {
@@ -397,21 +441,79 @@ public class AsciiArt {
 				+ BKN + "         /____/\\____\\                                         /___/Y                  =-.");
 	}
 	
+	public static void hero_forgeron() {
+		System.out.println( BKN + BKN + " /\\"
+				+ BKN + " ||"
+				+ BKN + " ||"
+				+ BKN + " ||"
+				+ BKN + " ||           {}"
+				+ BKN + " ||          .--."
+				+ BKN + " ||         /.--.\\"
+				+ BKN + " ||         |====|"
+				+ BKN + " ||         |`::`|"
+				+ BKN + "_||_    .-;`\\..../`;_.-^-._"
+				+ BKN + " /\\\\   /  |...::..|`   :   `|                                                       _"
+				+ BKN + " |:'\\ |   /'''::''|   .:.   |                                                      //"
+				+ BKN + "  \\ /\\;-,/\\   ::  |..:::::..|                                         _-_         //"
+				+ BKN + "   \\ <` >  >._::_.| ':::::' |                                        /   \\       //"
+				+ BKN + "    `\"\"`  /   ^^  |   ':'   |                                       :   ==\\   <\\//"
+				+ BKN + "          |       \\    :    /                .-------..___           \\____/_.-'_}>"
+				+ BKN + "          |        \\   :   /                 '-._     :_.-'        :__<_   :/ \""
+				+ BKN + "          |___/\\___|`-.:.-`                   .- ) _ ( --.         /.--.\\  |"
+				+ BKN + "           \\_ || _/                          :  '-' '-'  ;.       { \\>  |  |"
+				+ BKN + "           <_ >< _>                         /'-.._____.-' |    `. |._|  |  |"
+				+ BKN + "           |  ||  |                         |   |     \\   |      \\ ' '  \\  |     `."
+				+ BKN + "           |  ||  |                         \\   |     /   \\       ,)'| .__,_\\"
+				+ BKN + "          _\\.:||:./                         |   \\     )_.-'   - ,'_._\\  \"'-=-i\"\" ----"
+				+ BKN + "         /____/\\____\\                       '-._/__..-'         _,. -'''");
+	}
+	
+	public static void hero_pretre() {
+		System.out.println( BKN + BKN + " /\\"
+				+ BKN + " ||"
+				+ BKN + " ||                                                   .---."
+				+ BKN + " ||                                                 /` ___|`\\"
+				+ BKN + " ||           {}                                    |_/    \\|"
+				+ BKN + " ||          .--.                                   (  -/-  )"
+				+ BKN + " ||         /.--.\\                                   \\_ - _/"
+				+ BKN + " ||         |====|                                  .-'|_|'-."
+				+ BKN + " ||         |`::`|                                 /         \\"
+				+ BKN + "_||_    .-;`\\..../`;_.-^-._                       /     O     \\"
+				+ BKN + " /\\\\   /  |...::..|`   :   `|                    / _____!_____ \\"
+				+ BKN + " |:'\\ |   /'''::''|   .:.   |                   /.-------------.\\"
+				+ BKN + "  \\ /\\;-,/\\   ::  |..:::::..|                   \\|     ,;,     |/"
+				+ BKN + "   \\ <` >  >._::_.| ':::::' |                    |     ;;;     |"
+				+ BKN + "    `\"\"`  /   ^^  |   ':'   |                    |  ;;;;;;;;;  |"
+				+ BKN + "          |       \\    :    /                    |   `';;;'`   |"
+				+ BKN + "          |        \\   :   /                     |     ;;;     |"
+				+ BKN + "          |___/\\___|`-.:.-`                      |     ;;;     |"
+				+ BKN + "           \\_ || _/                              |     :::     |"
+				+ BKN + "           <_ >< _>                              |     ';'     |"
+				+ BKN + "           |  ||  |                              |             |"
+				+ BKN + "           |  ||  |                             _| _  __   __ _|_"
+				+ BKN + "          _\\.:||:./                           _/ _  __  ___  __ _\\_"
+				+ BKN + "         /____/\\____\\                       _/ __  ___  _ ___ __ _ \\_");
+	}
+	
 	public static void main(String[] args) {
 		//AsciiArt.boss1_alien();
 		//AsciiArt.boss2_sorciere();
+		//AsciiArt.forgeron();
 		//AsciiArt.mendiant();
 		//AsciiArt.hero();
 		//AsciiArt.coffre();
 		//AsciiArt.auberge();
 		//AsciiArt.garde();
 		//AsciiArt.voleur();
+		//AsciiArt.pretre();
 		//AsciiArt.hero_coffre();
 		//AsciiArt.hero_garde();
 		//AsciiArt.hero_auberge();
 		//AsciiArt.hero_voleur();
 		//AsciiArt.hero_mendiant();
 		//AsciiArt.hero_boss1();
-		AsciiArt.hero_boss2();
+		//AsciiArt.hero_boss2();
+		//AsciiArt.hero_forgeron();
+		//AsciiArt.hero_pretre();
 	}
 }
