@@ -4,6 +4,31 @@ public class AsciiArt {
 
 	public static final String BKN = System.getProperty("line.separator");
 
+	public static void fontaine() {
+		System.out.println( BKN + BKN + BKN + BKN + "                      .      .       .       ."
+				+ BKN + "  .   .       .          .      . .      .         .          .    ."
+				+ BKN + "         .       .         .    .   .         .         .            ."
+				+ BKN + "    .   .    .       .         . . .        .        .     .    ."
+				+ BKN + " .          .   .       .       . .      .        .  .              ."
+				+ BKN + "      .  .    .  .       .     . .    .       . .      .   .        ."
+				+ BKN + " .   .       .    . .      .    . .   .      .     .          .     ."
+				+ BKN + "    .            .    .     .   . .  .     .   .               ."
+				+ BKN + "     .               .  .    .  . . .    .  .                 ."
+				+ BKN + "                        . .  .  . . .  . .\n"
+				+ BKN + "                            . . . . . .\n"
+				+ BKN + "                              . . . .\n"
+				+ BKN + "                               I . I"
+				+ BKN + "                 _______________III_______________"
+				+ BKN + "                /    .       .       .       .    \\"
+				+ BKN + "               ( ~~~ .  ~~~  .  ~~~  .  ~~~  . ~~~ )"
+				+ BKN + "                 \\SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS/"
+				+ BKN + "                    \\ ======================= /"
+				+ BKN + "                        \\SSSSSSSSSSSSSSSSS/"
+				+ BKN + "                     ________\\       /________"
+				+ BKN + "                    (=+=+=+=+=+=+=+=+=+=+=+=+=)"
+				+ BKN + "                     ~~~~~~~~~~~~~~~~~~~~~~~~~");
+	}
+	
 	public static void boss1_alien() {
 		System.out.println(BKN + BKN + BKN + BKN + BKN + BKN + BKN + "         __.,,------.._"
 				+ BKN + "      ,'\"   _      _   \"`."
@@ -603,7 +628,35 @@ public class AsciiArt {
 				+ BKN + "         /____/\\____\\                       \"\"'\"\"'\"\"\".'..'. ' '. ''..'.\"\"'\"\"'\"\"'\"\"''\"''\"''\"\"");
 	}
 	
+	public static void hero_fontaine() {
+		System.out.println(BKN + BKN + " /\\"
+				+ BKN + " ||"
+				+ BKN + " ||                                                              .      .       .       ."
+				+ BKN + " ||                                          .   .       .          .      . .      .         .          .    ."
+				+ BKN + " ||           {}                                    .       .         .    .   .         .         .            ."
+				+ BKN + " ||          .--.                              .   .    .       .         . . .        .        .     .    ."
+				+ BKN + " ||         /.--.\\                          .          .   .       .       . .      .        .  .              ."
+				+ BKN + " ||         |====|                               .  .    .  .       .     . .    .       . .      .   .        ."
+				+ BKN + " ||         |`::`|                          .   .       .    . .      .    . .   .      .     .          .     ."
+				+ BKN + "_||_    .-;`\\..../`;_.-^-._                    .            .    .     .   . .  .     .   .               ."
+				+ BKN + " /\\\\   /  |...::..|`   :   `|                   .               .  .    .  . . .    .  .                 ."
+				+ BKN + " |:'\\ |   /'''::''|   .:.   |                                      . .  .  . . .  . ."
+				+ BKN + "  \\ /\\;-,/\\   ::  |..:::::..|                                          . . . . . ."
+				+ BKN + "   \\ <` >  >._::_.| ':::::' |                                            . . . ."
+				+ BKN + "    `\"\"`  /   ^^  |   ':'   |                                             I . I"
+				+ BKN + "          |       \\    :    /                               _______________III_______________"
+				+ BKN + "          |        \\   :   /                               /    .       .       .       .    \\"
+				+ BKN + "          |___/\\___|`-.:.-`                               ( ~~~ .  ~~~  .  ~~~  .  ~~~  . ~~~ )"
+				+ BKN + "           \\_ || _/                                         \\SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS/"
+				+ BKN + "           <_ >< _>                                            \\ ======================= /"
+				+ BKN + "           |  ||  |                                                \\SSSSSSSSSSSSSSSSS/"
+				+ BKN + "           |  ||  |                                             ________\\       /________"
+				+ BKN + "          _\\.:||:./                                            (=+=+=+=+=+=+=+=+=+=+=+=+=)"
+				+ BKN + "         /____/\\____\\                                           ~~~~~~~~~~~~~~~~~~~~~~~~~");
+	}
+	
 	public static void main(String[] args) {
+		AsciiArt.fontaine();
 		//AsciiArt.boss1_alien();
 		//AsciiArt.boss2_sorciere();
 		//AsciiArt.bossFinal();
@@ -627,5 +680,6 @@ public class AsciiArt {
 		//AsciiArt.hero_forgeron();
 		//AsciiArt.hero_pretre();
 		//AsciiArt.hero_maisonHantee();
+		AsciiArt.hero_fontaine();
 	}
 }
