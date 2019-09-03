@@ -4,7 +4,16 @@ package interaction;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
+import Structure.Auberge;
+import Structure.Coffre;
+import Structure.Garde;
+import Structure.Mendiant;
+import Structure.Personnage;
+import Structure.Pretre;
+import Structure.Voleur;
+import main.Game;
 import util.IEvenement;
 
 public class Evenement {
@@ -20,8 +29,31 @@ public class Evenement {
 			list.add(evenement);
 	}
 	
-	public IEvenement getRandomEvent() {
-		Collections.shuffle(list);
-		return list.get(0);
+	public static void launchRandomEvent(Personnage p) {
+		Random r = new Random();
+		switch(r.nextInt(7)) {
+			case 0:
+				Auberge.auberge(p);
+				break;
+			case 1:
+				Coffre.coffre(p);
+				break;
+			case 2:
+				Garde.garde(p);
+				break;
+			case 3:
+				Mendiant.mendiant(p);
+				break;
+			case 4:
+				Pretre.pretre(p);
+				break;
+			case 5:
+				Voleur.voleur(p);
+				break;
+			case 6:
+				Coffre.coffre(p);
+				break;
+		}
+		Game.checkStats(p);
 	}
 }

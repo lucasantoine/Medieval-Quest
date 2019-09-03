@@ -7,6 +7,8 @@ import Structure.Coffre;
 import Structure.Garde;
 import Structure.Heros;
 import Structure.Mendiant;
+import Structure.Personnage;
+import Structure.Pretre;
 import Structure.Voleur;
 import combat.PremierBoss;
 import combat.Sorciere;
@@ -23,45 +25,38 @@ public class Game {
 		Saisie.clearScreenOpti();
 		
 
+		int tour = 1;
 		
-		Coffre.coffre(player);
-		Game.checkStats(player);		
-		
-		Auberge.auberge(player);
-		Game.checkStats(player);
-		
-		Garde.garde(player);
-		Game.checkStats(player);
-		
-		Mendiant.mendiant(player);
-		checkStats(player);
-		
-		Voleur.voleur(player);
-		checkStats(player);
-		
-		PremierBoss.start(player);
-		checkStats(player);
-		
-		Sorciere.start(player);
-		checkStats(player);
+		while(player.getVie() >= 0 && player.getArg() >= 0) {
+			if(tour == 5) {
+				PremierBoss.start(player);
+				checkStats(player);
+			}else if(tour == 8) {
+				Sorciere.start(player);
+				checkStats(player);
+			}else{ 
+				Evenement.launchRandomEvent(player);
+			}
+			tour++;
+		}
 		
 		
 		
 	}
 	
-	public static void checkStats(Heros player) {
-		if(player.getVie() <=0) {
+	public static void checkStats(Personnage p) {
+		if(p.getVie() <=0) {
 			System.out.println("Vous etes mort par KO !");
 			System.out.println("Plus de vie.");
 			System.exit(0);
 		}
-		if(player.getAtk() <= 1) {
-			player.getHud().setAttaque(1);
+		if(p.getAtk() <= 1) {
+			p.getHud().setAttaque(1);
 		}
-		if(player.getDef() <= 0) {
-			player.getHud().setDefense(0);
+		if(p.getDef() <= 0) {
+			p.getHud().setDefense(0);
 		}
-		if(player.getArg() < 0 ) {
+		if(p.getArg() < 0 ) {
 			System.out.println("Vous etes ruine !");
 			System.out.println("Plus d'argent");
 			System.exit(0);

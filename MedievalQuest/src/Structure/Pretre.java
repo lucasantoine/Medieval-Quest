@@ -1,11 +1,14 @@
 package Structure;
 
+import interaction.AsciiArt;
 import interaction.Saisie;
 import util.IEvenement;
 
 public class Pretre implements IEvenement {
 
 	public static void pretre(Personnage p) {
+		System.out.println(p.getHud());
+		AsciiArt.hero_pretre();
 		System.out.println(
 				"Vous entrez dans une église où un prêtre vous propose de recevoir la bénédiction du Seigneur");
 		String s = Saisie
