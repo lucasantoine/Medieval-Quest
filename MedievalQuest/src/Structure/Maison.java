@@ -6,7 +6,7 @@ import util.IEvenement;
 public class Maison implements IEvenement {
 	
 	public static void maison(Personnage p) {
-		System.out.println("Vous apercevez de la lumière qui s'échappe d'une maison abandonnée depuis des années.");
+		System.out.println("\nVous apercevez de la lumière qui s'échappe d'une maison abandonnée depuis des années.");
 		String s = Saisie.saisie("Que voulez vous faire ? (1 - Frapper à la porte, 2 - Entrer sans frapper, 3 - Partir sans entrer) : \n", 3);
 		int choix = Saisie.stringToInt(s);
 		Saisie.clearScreenOpti();
@@ -23,16 +23,16 @@ public class Maison implements IEvenement {
 	}
 	
 	private static void frapper(Personnage p) {
-		System.out.println("Vous frappez à la porte si fort qu'elle se détruit. Tout comme la maison. Vous repartez après vous être péniblement sorti des décombres.");
-		Saisie.pressEnter("Vous perdez 10 points de vie.", true);
+		System.out.println("\nVous frappez à la porte si fort qu'elle se détruit. Tout comme la maison. Vous repartez après vous être péniblement sorti des décombres.");
+		Saisie.pressEnter("Vous perdez 10 points de vie.\n", true);
 	}
 	
 	private static void entrer(Personnage p) {
-		System.out.println("Vous entrez et surprenez un mage de sang faisant un rituel. Vous parvenez à le convaincre de vous offrir de la durée de vie contre votre silence sur ses activités.");
-		Saisie.pressEnter("Vous gagnez 10 points de vie.", true);
+		System.out.println("\nVous entrez et surprenez un mage de sang faisant un rituel. Vous parvenez à le convaincre de vous offrir de la durée de vie contre votre silence sur ses activités.");
+		Saisie.pressEnter("Vous gagnez 10 points de vie.\n", true);
 	}
 
 	private static void partir(Personnage p) {
-		Saisie.pressEnter("Vous décidez de ne pas vous risquer à entrer.", true);
+		Saisie.pressEnter("\nVous décidez de ne pas vous risquer à entrer.", true);
 	}
 }
