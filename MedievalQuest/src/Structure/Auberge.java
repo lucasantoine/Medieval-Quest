@@ -38,10 +38,21 @@ public class Auberge implements IEvenement{
 		int tmp = R.nextInt(3);
 		
 		if(tmp == 1) {
-			int pv = p.getVie();
-			p.getHud().setVie(pv-10);
-			System.out.println("\nLes propriï¿½taires de l'auberge ï¿½taient bien armï¿½s !");
-			Saisie.pressEnter("Vous perdez 10 pv\n", false);
+			if(p.getAtk() >= 15) {
+				p.getHud().setVie(p.getVie()-2);
+				System.out.println("\nLes propriétaires de l'auberge sont bien armés, mais vous êtes assez fort pour leur faire face !");
+				Saisie.pressEnter("Vous ne perdez que 2pv\n", false);
+				
+			}
+			if(p.getAtk() < 15) {
+				int pv = p.getVie();
+				p.getHud().setVie(pv-10);
+				System.out.println("\nLes propriï¿½taires de l'auberge ï¿½taient bien armï¿½s !");
+				Saisie.pressEnter("Vous perdez 10 pv\n", false);
+			}
+			
+			
+			
 		}
 		
 		if(tmp == 2 || tmp ==0) {
