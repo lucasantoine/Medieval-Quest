@@ -26,7 +26,7 @@ public class AsciiArt {
 				+ BKN + "                                 ,'\",__,-'       /,, ,-'");
 	}
 	
-	public static void sorciere() {
+	public static void boss2_sorciere() {
 		System.out.println(
 				BKN + BKN + BKN + "                             __..--,"
 				+ BKN + "                          .-'     /"
@@ -370,9 +370,36 @@ public class AsciiArt {
 				+ BKN + "         /____/\\____\\                                                       ,'\",__,-'       /,, ,-'");
 	}
 	
+	public static void hero_boss2() {
+		System.out.println( BKN + BKN + " /\\"
+				+ BKN + " ||                                                                     __..--,"
+				+ BKN + " ||                                                                  .-'     /"
+				+ BKN + " ||                                                                .`       /"
+				+ BKN + " ||           {}                                                  /         |"
+				+ BKN + " ||          .--.                                                /==========|"
+				+ BKN + " ||         /.--.\\                                       _______/___________|______"
+				+ BKN + " ||         |====|                                     '-------<<<<<<<<<<<<<\\------'"
+				+ BKN + " ||         |`::`|                                          ,--'a <<<<<<<<<<<<"
+				+ BKN + "_||_    .-;`\\..../`;_.-^-._                                (___.    >>>>>>>>>>>"
+				+ BKN + " /\\\\   /  |...::..|`   :   `|                               .--'--' <<<<<<<<<<<"
+				+ BKN + " |:'\\ |   /'''::''|   .:.   |                               `--,___,>>>>>>>>>>"
+				+ BKN + "  \\ /\\;-,/\\   ::  |..:::::..|                                 _,-'         '."
+				+ BKN + "   \\ <` >  >._::_.| ':::::' |                           _.--''    _.-'       \\"
+				+ BKN + "    `\"\"`  /   ^^  |   ':'   |                         .'      _.-' \\          \\"
+				+ BKN + "          |       \\    :    /              (`'--..__  /'-,__.' ,-~~`.          |"
+				+ BKN + "          |        \\   :   /                `'--..__`'--..__ ,'      `-        |"
+				+ BKN + "          |___/\\___|`-.:.-`                         `'--..__/    .'           /\"+ "
+				+ BKN + "           \\_ || _/                                        |          ,      /  ,\\\\/.___"
+				+ BKN + "           <_ >< _>                                         `-._      |\\\\      ('-.\\\\|=-._`=-._"
+				+ BKN + "           |  ||  |                                          /  (`-.__/-`-,___;-.>/=-._=-._=._"
+				+ BKN + "           |  ||  |                                        _/-` | /  (           /|'_=-._=-._"
+				+ BKN + "          _\\.:||:./                                      /___/Y_/-` |            `=-._=-._="
+				+ BKN + "         /____/\\____\\                                         /___/Y                  =-.");
+	}
+	
 	public static void main(String[] args) {
 		//AsciiArt.boss1_alien();
-		//AsciiArt.sorciere();
+		//AsciiArt.boss2_sorciere();
 		//AsciiArt.mendiant();
 		//AsciiArt.hero();
 		//AsciiArt.coffre();
@@ -385,5 +412,6 @@ public class AsciiArt {
 		//AsciiArt.hero_voleur();
 		//AsciiArt.hero_mendiant();
 		//AsciiArt.hero_boss1();
+		AsciiArt.hero_boss2();
 	}
 }
