@@ -28,6 +28,7 @@ public class Auberge {
 			argent = argent /3 *2;
 			p.getHud().setArgent(argent);
 			System.out.println("Vous vous êtes fait dépouiller !");
+			System.out.println("Vous perdez 1/3 de votre argent");
 			
 		}
 		
