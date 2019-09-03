@@ -51,6 +51,26 @@ public class Saisie {
 
 	}
 	
+	public static void pressEnter(String messageToShow, boolean clearScreen) {
+		boolean valide = false;
+		Scanner sc = new Scanner(System.in);
+		String saisieUser = ""; 
+		
+		while (! valide) {
+			
+			if(clearScreen) {
+				Saisie.clearScreenOpti();
+			}
+			
+			if(messageToShow != null) {
+				System.out.print(messageToShow);
+			}
+			saisieUser = sc.nextLine();
+			
+			valide = saisieUser.length() == 0;
+		}
+	}
+	
 	public static int stringToInt(String saisie) {
 		int res = -1;
 		
@@ -63,12 +83,9 @@ public class Saisie {
 		return res;
 	}
 	
-	/**
-	 * Test
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		String saisie = Saisie.saisie("Que faites vous (1, 2 ou 3) : ", 1);
-		System.out.println("Vous avez saisie : " + saisie);
+	public static void clearScreenOpti() {
+		for(int i=0 ; i<100 ; i++) {
+			System.out.println();
+		}
 	}
 }

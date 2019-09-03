@@ -11,7 +11,7 @@ import menu.EcranTitre;
 public class TestAdrien {
 	public static void main(String[] args) {
 		
-		EcranTitre.main(args);
+		EcranTitre.showHomeScreen();
 		
 		System.out.println("caca");
 		

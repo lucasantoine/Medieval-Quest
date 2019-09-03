@@ -7,7 +7,7 @@ import menu.EcranTitre;
 
 public class Game {
 	public static void main(String[] args) {
-		EcranTitre.main(args);
+		EcranTitre.showHomeScreen();
 		Heros player = new Heros();
 		player.choseClasse();
 		
