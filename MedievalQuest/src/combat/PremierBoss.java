@@ -10,14 +10,14 @@ public class PremierBoss implements IEvenement{
 
 	public static void start(Personnage player) {
 		Saisie.clearScreenOpti();
-		System.out.println("Lors de votre croisade, vous vous faites arreter par la sorciere du roi avec une horde de betes sauvages qu'il lache sur vous.\n"
+		System.out.println("Lors de votre croisade, vous vous faites arrêté par la sorciere du roi accompagnée d'une horde de betes sauvages qu'il lache sur vous.\n"
 				+ "Vous n'avez pas d'autre choix que de sortir les armes");
 		Heros boss = new Heros(20, 5, 3, 50);
 		while(player.getVie() > 0 && boss.getVie() > 0) {
 			AsciiArt.hero_boss1();
 			Combat.startCombat(player, boss);
 		}
-		Saisie.pressEnter("Vous avez vaincu la horde et le chevalier a fuit le combat", false);
+		Saisie.pressEnter("Vous avez vaincu la horde et le chevalier a fui le combat", false);
 	}
 
 }
