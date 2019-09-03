@@ -2,6 +2,9 @@ package Structure;
 
 import java.util.Random;
 
+import interaction.AsciiArt;
+import interaction.Saisie;
+
 public class Coffre {
 	public static final String BKN = System.getProperty("line.separator");
 	
@@ -24,7 +27,20 @@ public class Coffre {
 			+ BKN + " |_\\o/     __  {.' __  '.}  __    \\o/_|"
 			+ BKN + " `\"\"\"\"-\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"-\"\"\"\"`";
 	
-	public static void ouvrirCoffre(Personnage p) {
+	public static void coffre(Personnage p) {
+		System.out.println(p.getHud());
+		System.out.println("Vous arrivez en face d'un coffre. Voulez vous prendre le risque de l'ouvrir, ou allez vous passer votre chemin ?");
+		AsciiArt.hero_coffre();
+		String s = Saisie.saisie("Faites un choix (1 - ouvrir, 2 - partir) : \n", 2);
+		int choix = Saisie.stringToInt(s);
+		Saisie.clearScreenOpti();
+		if(choix == 1) {
+			Coffre.ouvrirCoffre(p);
+		}
+		System.out.println(p.getHud());
+	}
+	
+	private static void ouvrirCoffre(Personnage p) {
 		int tmp = R.nextInt(4);
 		if(Coffre.bonus()) {
 			System.out.println("Vous gagnez 10 "+p.getHud().getStats()[tmp].getStat().getSymbole());
