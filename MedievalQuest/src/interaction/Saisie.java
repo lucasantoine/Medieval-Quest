@@ -88,4 +88,29 @@ public class Saisie {
 			System.out.println();
 		}
 	}
+
+	public static boolean pressEnterToStartAndQToQuit(String messageToShow, boolean clearScreen, String strExpecting) {
+		boolean valide = false;
+		boolean expectationRiched = false;
+		
+		Scanner sc = new Scanner(System.in);
+		String saisieUser = ""; 
+		
+		while (! valide) {
+			
+			if(messageToShow != null) {
+				System.out.print(messageToShow);
+			}
+			saisieUser = sc.nextLine().toLowerCase();
+			
+			valide = saisieUser.length() == 0 || saisieUser.equals(strExpecting.toLowerCase());
+			expectationRiched = saisieUser.length() == 0 || saisieUser.equals(strExpecting.toLowerCase());
+			
+			if(clearScreen) {
+				Saisie.clearScreenOpti();
+			}
+		}
+		
+		return expectationRiched;
+	}
 }
