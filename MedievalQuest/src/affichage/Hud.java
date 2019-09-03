@@ -17,6 +17,31 @@ public class Hud {
 		this(10, 10, 10, 10);
 	}
 	
+	public void setStats(int vie, int attaque, int defense, int argent) {
+		this.stats[0].setValue(vie);
+		this.stats[1].setValue(attaque);
+		this.stats[2].setValue(defense);
+		this.stats[3].setValue(argent);
+	}
+	
+	public void setVie(int vie) {
+		this.stats[0].setValue(vie);
+	}
+	
+	public void setAttaque(int attaque) {
+		this.stats[0].setValue(attaque);
+	}
+
+	public void setDefense(int defense) {
+		this.stats[0].setValue(defense);
+	}
+
+	public void setArgent(int argent) {
+		this.stats[0].setValue(argent);
+	}
+
+
+	
 	public Statistique[] getStats() {
 		return stats;
 	}

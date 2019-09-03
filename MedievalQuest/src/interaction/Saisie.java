@@ -57,7 +57,7 @@ public class Saisie {
 		if(saisie.length() >0) {	
 			char firstChar = saisie.charAt(0);
 		
-			res = firstChar - 0;
+			res = firstChar - '0';
 		}
 		
 		return res;
