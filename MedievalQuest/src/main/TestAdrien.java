@@ -17,7 +17,7 @@ public class TestAdrien {
 		
 		Heros player = new Heros();
 		System.out.println(player.getHud());
-		
+		 
 		
 		System.out.println("Vous arrivez devant un coffre !");
 		

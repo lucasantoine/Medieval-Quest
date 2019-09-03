@@ -50,7 +50,7 @@ public class Saisie {
 		return saisieUser;
 
 	}
-	
+	 
 	public static void pressEnter(String messageToShow, boolean clearScreen) {
 		boolean valide = false;
 		Scanner sc = new Scanner(System.in);

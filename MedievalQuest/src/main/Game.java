@@ -20,5 +20,5 @@ public class Game {
 			Coffre.ouvrirCoffre(player);
 		}
 		System.out.println(player.getHud());
-	}
+	} 
 }
