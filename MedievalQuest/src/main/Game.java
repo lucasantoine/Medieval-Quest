@@ -89,6 +89,6 @@ public class Game {
 			}else if(tour != i) str += "--";
 			if(i == tour) str += "o";
 		}
-		return str;
+		return str ;
 	}
 }
