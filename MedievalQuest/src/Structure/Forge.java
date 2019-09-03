@@ -9,9 +9,7 @@ public class Forge {
 	public static final Random R = new Random();
 	
 	public static void acheterEpee(Personnage p) {
-		if(p.getArg() < 20 ) {
-			Saisie.pressEnter("\nVous êtes bien trop pauvre pour acheter cette belle épée\n", false);
-		}
+		
 		if(p.getArg() >= 20) {
 			p.getHud().setAttaque(p.getAtk()*2);
 			
@@ -19,18 +17,21 @@ public class Forge {
 			System.out.println("\nVous avez acheté la super épée");
 			Saisie.pressEnter("Attaque *2 !\n", false);
 		}
+		else {
+			Saisie.pressEnter("\nVous êtes bien trop pauvre pour acheter cette belle épée\n", false);
+		}
 		
 	}
 	
 	public static void acheterBouclier(Personnage p) {
-		if(p.getArg() < 25 ) {
-			Saisie.pressEnter("\nVous êtes bien trop pauvre pour acheter cette magnifique épée\n", false);
-		}
 		if(p.getArg() >= 25) {
 			p.getHud().setDefense(p.getDef()*2);
 			p.getHud().setArgent(p.getArg()-25);
 			System.out.println("\nVous avez acheté le magnifique bouclier");
 			Saisie.pressEnter("Défense *2 !\n", false);
+		}
+		else {
+			Saisie.pressEnter("\nVous êtes bien trop pauvre pour acheter cette magnifique épée\n", false);
 		}
 		
 	}
