@@ -11,6 +11,8 @@ public class Forge {
 	public static void acheterEpee(Personnage p) {
 		if(p.getArg() >= 20) {
 			p.getHud().setAttaque(p.getAtk()*2);
+			
+			p.getHud().setArgent(p.getArg()-20);
 			System.out.println("\nVous avez acheté la super épée");
 			Saisie.pressEnter("Attaque *2 !\n", false);
 		}
@@ -22,6 +24,7 @@ public class Forge {
 	public static void acheterBouclier(Personnage p) {
 		if(p.getArg() >= 25) {
 			p.getHud().setAttaque(p.getAtk()*2);
+			p.getHud().setArgent(p.getArg()-25);
 			System.out.println("\nVous avez acheté le magnifique bouclier");
 			Saisie.pressEnter("Défense *2 !\n", false);
 		}
