@@ -104,7 +104,7 @@ public class Saisie {
 			saisieUser = sc.nextLine().toLowerCase();
 			
 			valide = saisieUser.length() == 0 || saisieUser.equals(strExpecting.toLowerCase());
-			expectationRiched = saisieUser.length() == 0 || saisieUser.equals(strExpecting.toLowerCase());
+			expectationRiched = saisieUser.equals(strExpecting.toLowerCase());
 			
 			if(clearScreen) {
 				Saisie.clearScreenOpti();

@@ -15,9 +15,11 @@ public class EcranTitre {
 				"       ▀█   ███   █▀    ██████████ ████████▀  █▀     ██████████  ▀██████▀    ███    █▀  █████▄▄██       ▀██████▀▄█ ████████▀    ██████████  ▄████████▀     ▄████▀        \r\n" + 
 				"                                                                                   ▀                                                                                " +
 				"\n\n\n\n" +
-				"          Appuyez sur ENTER pour jouer";
+				"          Appuyez sur ENTER pour jouer ou Q pour quitter";
 		
-		Saisie.pressEnter(messageToShow, true);
+		if(Saisie.pressEnterToStartAndQToQuit(messageToShow, true, "q")) {
+			System.exit(0);
+		}
 		Saisie.clearScreenOpti();
 	}
 	
