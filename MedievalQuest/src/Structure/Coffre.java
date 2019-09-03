@@ -9,7 +9,7 @@ public class Coffre {
 	public static final Random R = new Random();
 	private static Scanner sc = new Scanner(System.in);
 	
-	private String image = "       ____...------------...____"
+	private static String image = "       ____...------------...____"
 			+ BKN + "  _.-\"` /o/__ ____ __ __  __ \\o\\_`\"-._"
 			+ BKN + ".'     / /                    \\ \\     '."
 			+ BKN + "|=====/o/======================\\o\\=====|"
@@ -45,7 +45,7 @@ public class Coffre {
 		return R.nextInt(2)==1;
 	}
 
-	public String getImage() {
+	public static String getImage() {
 		return image;
 	}
 }

@@ -24,7 +24,7 @@ public class TestAdrien {
 		Coffre c = new Coffre();
 		System.out.println(c.getImage());
 		System.out.println("Que voulez-vous faire ?");
-		System.out.println("   1. Ouvrir le coffre (à vos risques et périls)");
+		System.out.println("   1. Ouvrir le coffre (ï¿½ vos risques et pï¿½rils)");
 		System.out.println("   2. Ne pas prendre de risque inutile.");
 	
 		/**
