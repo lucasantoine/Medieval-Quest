@@ -3,6 +3,7 @@ package Structure;
 import affichage.Hud;
 import interaction.Saisie;
 import util.EStat;
+import util.Effet;
 
 public abstract class Personnage {
 	private Hud hud;
@@ -31,11 +32,31 @@ public abstract class Personnage {
 		return this.hud.getStats()[3].getValue();
 	}
 	
+	public void setVie(int vie) {
+		hud.setVie(vie);
+	}
+	
+	public void setAttaque(int attaque) {
+		hud.setAttaque(attaque);
+	}
+	
+	public void setDefense(int defense) {
+		hud.setDefense(defense);
+	}
+	
+	public void setArgent(int argent) {
+		hud.setArgent(argent);
+	}
+	
 	public int getStatValue(EStat stat) {
 		for(int i = 0; i < hud.getStats().length; i++) {
 			if(hud.getStats()[i].getStat() == stat) return hud.getStats()[i].getValue();
 		}
 		return 0;
+	}
+	
+	public void doEffet(Effet effet) {
+		
 	}
 	
 	
