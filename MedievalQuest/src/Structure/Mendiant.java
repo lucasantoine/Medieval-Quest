@@ -72,12 +72,4 @@ public class Mendiant implements IEvenement {
 		Saisie.pressEnter("DEF -10", false);
 		p.getHud().getStats()[2].add(-10);
 	}
-	
-	public static void main(String[] args) {
-		Heros h = new Heros();
-		System.out.println(h.getHud().toString());
-		Mendiant.mendiant(h);
-		System.out.println(h.getHud().toString());
-
-	}
 }

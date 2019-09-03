@@ -1,7 +1,5 @@
 package menu;
 
-import java.util.Scanner;
-
 import interaction.Saisie;
 
 public class EcranTitre {
