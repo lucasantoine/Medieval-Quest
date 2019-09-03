@@ -23,7 +23,7 @@ public class Forge {
 	
 	public static void acheterBouclier(Personnage p) {
 		if(p.getArg() >= 25) {
-			p.getHud().setAttaque(p.getAtk()*2);
+			p.getHud().setDefense(p.getDef()*2);
 			p.getHud().setArgent(p.getArg()-25);
 			System.out.println("\nVous avez acheté le magnifique bouclier");
 			Saisie.pressEnter("Défense *2 !\n", false);
