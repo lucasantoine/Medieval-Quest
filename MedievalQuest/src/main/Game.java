@@ -13,7 +13,7 @@ public class Game {
 		
 		System.out.println(player.getHud());
 		System.out.println("Vous arrivez en face d'un coffre. Voulez vous prendre le risque de l'ouvrir, ou allez vous passer votre chemin ?");
-		System.out.println(Coffre.getImage());
+		System.out.println(player.getImage()+"\n"+Coffre.getImage());
 		String s = Saisie.saisie("Faites un choix (1 - ouvrir, 2 - partir) : \n", 2);
 		int choix = Saisie.stringToInt(s);
 		if(choix == 1) {
