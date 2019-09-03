@@ -33,7 +33,23 @@ public class Auberge {
 		
 	}
 	
-	//public static void pillerAuberge
+	public static void pillerAuberge(Personnage p) {
+		int tmp = R.nextInt(3);
+		
+		if(tmp == 1) {
+			int pv = p.getVie();
+			p.getHud().setVie(pv-10);
+			System.out.println("Les propriétaires de l'auberge étaient bien armés !");
+			System.out.println("Vous perdez 10 pv");
+		}
+		
+		if(tmp == 2) {
+			int def = p.getDef();
+			p.getHud().setDefense(def + 5); 
+			System.out.println("Vous avez trouvé un bouclier en bois !");
+			System.out.println("Vous avez gagné 5 points de défense");
+		}
+	}
 	
 	
 	
