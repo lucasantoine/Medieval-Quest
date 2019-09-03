@@ -75,7 +75,7 @@ public abstract class Personnage {
 	}
 
 	public void choseClasse() {
-		String saisie = Saisie.saisie("Quelle est votre : 1 - Chevalier, 2 - Assassin, 3 - Tank", 3);
+		String saisie = Saisie.saisie("Quelle classe aimerez vous atteindre : 1 - Chevalier, 2 - Assassin, 3 - Tank :", 3);
 		int saisieToString = Saisie.stringToInt(saisie);
 		
 		if(saisieToString == 1) {

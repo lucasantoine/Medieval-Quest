@@ -64,7 +64,7 @@ public class Auberge implements IEvenement{
 		String s = Saisie.saisie("", 3);
 		int choix = Saisie.stringToInt(s);
 		
-		System.out.println(choix);
+		//System.out.println(choix);
 		
 		Saisie.clearScreenOpti();
 		if (choix ==1) {
@@ -74,7 +74,8 @@ public class Auberge implements IEvenement{
 			Auberge.pillerAuberge(p);
 		}
 		if (choix ==3) {
-			System.out.println("Vous avez pass� votre chemin.");
+			//System.out.println("Vous avez pass� votre chemin.");
+			Saisie.pressEnter("Vous avez pass� votre chemin.", false);
 		}
 		
 		System.out.println(p.getHud());
