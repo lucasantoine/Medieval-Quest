@@ -2,14 +2,8 @@ package main;
 
 
 
-import Structure.Auberge;
-import Structure.Coffre;
-import Structure.Garde;
 import Structure.Heros;
-import Structure.Mendiant;
 import Structure.Personnage;
-import Structure.Pretre;
-import Structure.Voleur;
 import combat.PremierBoss;
 import combat.Sorciere;
 import interaction.Evenement;
