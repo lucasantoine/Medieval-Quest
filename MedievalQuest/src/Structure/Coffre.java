@@ -4,9 +4,8 @@ import java.util.Random;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
-import util.IEvenement;
 
-public class Coffre implements IEvenement {
+public class Coffre {
 	public static final String BKN = System.getProperty("line.separator");
 	
 	public static final Random R = new Random();
@@ -51,7 +50,8 @@ public class Coffre implements IEvenement {
 			p.getHud().getStats()[tmp].add(-5);
 		}
 		System.out.println();
-		System.out.println("Appuyez sur <Entrée> pour continuer.");
+		System.out.println();
+		Saisie.pressEnter("Appuyez sur <Entrée> pour continuer.", false);
 	}
 	
 	private static boolean bonus() {

@@ -21,16 +21,21 @@ public class Auberge {
 	public static void dormirAuberge(Personnage p) {
 		int pv = p.getVie();
 		p.getHud().setVie(pv + gainVieDormir);
-		System.out.println("Vous avez gagné 20 points de vie!");
-		
 		int tmp = R.nextInt(4);
-		System.out.println(tmp);
+		
 		if(tmp == 1) {
 			int argent = p.getArg();
 			argent = argent /3 *2;
 			p.getHud().setArgent(argent);
 			System.out.println("Vous vous êtes fait dépouiller !");
+			
 		}
+		
+		//System.out.println("Vous avez gagné 20 points de vie!")
+		Saisie.pressEnter("Vous avez gagné 20 points de vie!", false);
+		
+		
+		
 		
 	}
 	
@@ -41,19 +46,21 @@ public class Auberge {
 			int pv = p.getVie();
 			p.getHud().setVie(pv-10);
 			System.out.println("Les propriétaires de l'auberge étaient bien armés !");
-			System.out.println("Vous perdez 10 pv");
+			//System.out.println("Vous perdez 10 pv");
+			Saisie.pressEnter("Vous perdez 10 pv", false);
 		}
 		
-		if(tmp == 2) {
+		if(tmp == 2 || tmp ==0) {
 			int def = p.getDef();
 			p.getHud().setDefense(def + 5); 
 			System.out.println("Vous avez trouvé un bouclier en bois !");
-			System.out.println("Vous avez gagné 5 points de défense");
+			//System.out.println("Vous avez gagné 5 points de défense");
+			Saisie.pressEnter("Vous avez gagné 5 points de défense", false);
 		}
 	}
 	
 	public static void auberge(Personnage p) {
-		System.out.println(p.getHud());
+		//System.out.println(p.getHud());
 		AsciiArt.auberge();
 		System.out.println("Vous arrivez devant l'auberge. Que souhaitez-vous faire ?");
 		System.out.println("   1. Dormir");
