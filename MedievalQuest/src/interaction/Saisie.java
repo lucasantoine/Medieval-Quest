@@ -111,6 +111,6 @@ public class Saisie {
 			}
 		}
 		
-		return expectationRiched;
+		return ! expectationRiched;
 	}
 }
