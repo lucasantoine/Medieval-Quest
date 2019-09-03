@@ -1,4 +1,4 @@
-#Rétrospective du sprint 1
+#Rétrospective du sprint 2
 
 Nom du scrum master du sprint :
 
