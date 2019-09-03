@@ -43,11 +43,11 @@ public abstract class Personnage {
 		int saisieToString = Saisie.stringToInt(saisie);
 		
 		if(saisieToString == 1) {
-			this.setHud(new Hud(10, 5, 5, 500));
+			this.setHud(new Hud(10, 5, 5, 5));
 		}else if(saisieToString == 2) {
-			this.setHud(new Hud(5, 10, 5, 500));
+			this.setHud(new Hud(5, 10, 5, 5));
 		}else if(saisieToString == 3) {
-			this.setHud(new Hud(5, 5, 10, 500));
+			this.setHud(new Hud(5, 5, 10, 5));
 		}
 	}
 	
