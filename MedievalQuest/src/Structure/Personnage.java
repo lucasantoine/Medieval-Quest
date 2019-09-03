@@ -79,7 +79,12 @@ public abstract class Personnage {
 
 	public void choseClasse() {
 		Saisie.clearScreenOpti();
-		String saisie = Saisie.saisie("De quelle classe venez  vous : 1 - Chevalier, 2 - Assassin, 3 - Tank, 4 - Noble:", 4);
+		System.out.println("Quelle classe voulez-vous incarner ?");
+		System.out.println("   1.Chevalier");
+		System.out.println("   2.Assasin");
+		System.out.println("   3.Tank");
+		System.out.println("   4.Noble");
+		String saisie = Saisie.saisie("", 4);
 		int saisieToString = Saisie.stringToInt(saisie);
 		
 		if(saisieToString == 1) {

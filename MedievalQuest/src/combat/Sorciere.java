@@ -18,7 +18,7 @@ public class Sorciere {
 			AsciiArt.hero_boss2();
 			Combat.startCombat(p, boss);
 		}
-		Saisie.pressEnter("Appuyer sur ENTER pour passer a la suite", true);
-		System.out.println("Vous avez vaincu la sorciere, maintenant vous vous rendez vers la salle du roi pour vaincre le terrible dragon");
+		
+		Saisie.pressEnter("Vous avez vaincu la sorciere, maintenant vous vous rendez vers la salle du roi pour vaincre le terrible dragon", false);
 	}
 }
