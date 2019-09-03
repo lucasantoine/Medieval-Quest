@@ -16,7 +16,6 @@ public class Dragon {
 				+ "Vous sortez votre epee et vous le provoquez en lui disant : (Entrez une phrase de votre choix)\n");
 		String phrase = sc.nextLine();
 		
-		
 		Heros boss = new Heros(100, 15, 20, 42);
 		while(p.getVie() > 0 && boss.getVie() > 0) {
 			AsciiArt.hero_bossFinal();
