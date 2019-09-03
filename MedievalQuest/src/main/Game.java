@@ -14,11 +14,13 @@ import combat.PremierBoss;
 import combat.Sorciere;
 import interaction.Evenement;
 import interaction.Saisie;
+import menu.Context;
 import menu.EcranTitre;
 
 public class Game {
 	public static void main(String[] args) {
 		EcranTitre.showHomeScreen();
+		Context.showContext();
 		Heros player = new Heros();
 		Evenement event = new Evenement(new Coffre(), new Garde(), new Voleur(), new Mendiant(), new Auberge());
 		player.choseClasse();
