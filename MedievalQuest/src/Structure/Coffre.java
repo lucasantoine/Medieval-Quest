@@ -1,6 +1,5 @@
 package Structure;
 
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,8 +7,7 @@ public class Coffre {
 	public static final String BKN = System.getProperty("line.separator");
 	
 	public static final Random R = new Random();
-	public ArrayList<String> stat = new ArrayList<>();
-	private Scanner sc = new Scanner(System.in);
+	private static Scanner sc = new Scanner(System.in);
 	
 	private String image = "       ____...------------...____"
 			+ BKN + "  _.-\"` /o/__ ____ __ __  __ \\o\\_`\"-._"
@@ -28,16 +26,9 @@ public class Coffre {
 			+ BKN + " |_\\o/     __  {.' __  '.}  __    \\o/_|"
 			+ BKN + " `\"\"\"\"-\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"-\"\"\"\"`";
 	
-	public Coffre() {
-		this.stat.add("Vie");
-		this.stat.add("Atk");
-		this.stat.add("Def");
-		this.stat.add("$");
-	}
-	
-	public void ouvrirCoffre(Personnage p) {
+	public static void ouvrirCoffre(Personnage p) {
 		int tmp = R.nextInt(4);
-		if(this.bonus()) {
+		if(Coffre.bonus()) {
 			System.out.println("Vous gagnez 10 "+p.getHud().getStats()[tmp].getStat().getSymbole());
 			p.getHud().getStats()[tmp].add(10);
 		} else {
@@ -50,13 +41,8 @@ public class Coffre {
 		sc.close();
 	}
 	
-	public boolean bonus() {
+	private static boolean bonus() {
 		return R.nextInt(2)==1;
-	}
-	
-	public static void main(String[] args) {
-		Coffre c = new Coffre();
-		c.ouvrirCoffre(new Heros());
 	}
 
 	public String getImage() {

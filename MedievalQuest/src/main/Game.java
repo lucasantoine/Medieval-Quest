@@ -2,7 +2,6 @@ package main;
 
 import Structure.Coffre;
 import Structure.Heros;
-import affichage.Hud;
 import interaction.Saisie;
 import menu.EcranTitre;
 
