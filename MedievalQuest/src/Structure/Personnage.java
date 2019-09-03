@@ -87,7 +87,7 @@ public abstract class Personnage {
 		}
 	}
 	
-	public abstract String getImage();
+	public abstract void getImage();
 
 	public boolean isAttaque() {
 		return attaque;

@@ -36,8 +36,8 @@ public class Heros extends Personnage {
 		super();
 	}
 	
-	public String getImage() {
-		return image;
+	public void getImage() {
+		System.out.println(image);;
 	}
 	
 	
