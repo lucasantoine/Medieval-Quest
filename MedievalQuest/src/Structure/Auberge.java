@@ -61,6 +61,9 @@ public class Auberge {
 		System.out.println("   3. Passer votre chemin");
 		String s = Saisie.saisie("", 3);
 		int choix = Saisie.stringToInt(s);
+		
+		System.out.println(choix);
+		
 		Saisie.clearScreenOpti();
 		if (choix ==1) {
 			Auberge.dormirAuberge(p);

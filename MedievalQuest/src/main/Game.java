@@ -1,5 +1,7 @@
 package main;
 
+
+
 import Structure.Auberge;
 import Structure.Coffre;
 import Structure.Garde;
@@ -14,25 +16,44 @@ public class Game {
 		player.choseClasse();
 		Saisie.clearScreenOpti();
 		
+		
 		Coffre.coffre(player);
 		
-		if(player.getVie() <= 0 || player.getArg() <= 0) {
-			System.out.println("Vous avez perdu !");
-			System.exit(0);
-		}
+		Game.checkStats(player);
+		
 		
 		Auberge.auberge(player);
-		if(player.getVie() <= 0 || player.getArg() <= 0) {
-			System.out.println("Vous avez perdu !");
-			System.exit(0);
-		}
+		
+		Game.checkStats(player);
 		
 		
 		Garde.garde(player);
-		System.out.println(player.getHud());
-		if(player.getVie() <= 0  || player.getArg() <= 0) {
-			System.out.println("Vous avez perdu !");
+		
+		Game.checkStats(player);
+		
+		
+		
+	}
+	
+	public static void checkStats(Heros player) {
+		if(player.getVie() <=0) {
+			System.out.println("Vous êtes mort par KO !");
+			System.out.println("Plus de vie.");
 			System.exit(0);
 		}
+		if(player.getAtk() <= 1) {
+			player.getHud().setAttaque(1);
+		}
+		if(player.getDef() <= 0) {
+			player.getHud().setDefense(0);
+		}
+		if(player.getArg() < 0 ) {
+			System.out.println("Vous êtes ruiné !");
+			System.out.println("Plus d'argent");
+			System.exit(0);
+			
+		}
+		
+		
 	}
 }
