@@ -19,12 +19,14 @@ public class Game {
 		Context.showContext();
 		Heros player = new Heros();
 		player.choseClasse();
+		String barAvancement = "o--------⚔----⚔--⚔";
 		Saisie.clearScreenOpti();
 		
 
 		int tour = 1;
 		
 		while(player.getVie() >= 0 && player.getArg() >= 0 && tour <= 10) {
+			System.out.println(barAvancement);
 			if(tour == 5) {
 				PremierBoss.start(player);
 				checkStats(player);
@@ -38,6 +40,7 @@ public class Game {
 				Evenement.launchRandomEvent(player);
 			}
 			tour++;
+			barAvancement = bar(tour);
 		}
 		if(tour > 10) {
 			Saisie.clearScreenOpti();
@@ -75,8 +78,17 @@ public class Game {
 			System.out.println("Plus d'argent");
 			System.exit(0);
 			
+		}		
+	}
+	
+	public static String bar(int tour) {
+		String str = "";
+		for(int i = 0; i <= 10; i++) {
+			if(i == 5 || i == 8 || i == 10) {
+				str += "⚔";
+			}else if(tour != i) str += "--";
+			if(i == tour) str += "o";
 		}
-		
-		
+		return str;
 	}
 }
