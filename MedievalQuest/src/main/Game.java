@@ -22,7 +22,6 @@ public class Game {
 		EcranTitre.showHomeScreen();
 		Context.showContext();
 		Heros player = new Heros();
-		Evenement event = new Evenement(new Coffre(), new Garde(), new Voleur(), new Mendiant(), new Auberge());
 		player.choseClasse();
 		Saisie.clearScreenOpti();
 		
