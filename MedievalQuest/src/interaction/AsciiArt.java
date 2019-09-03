@@ -4,6 +4,28 @@ public class AsciiArt {
 
 	public static final String BKN = System.getProperty("line.separator");
 
+	public static void boss1_alien() {
+		System.out.println(BKN + BKN + BKN + BKN + BKN + BKN + BKN + "         __.,,------.._"
+				+ BKN + "      ,'\"   _      _   \"`."
+				+ BKN + "     /.__, ._  -=- _\"`    Y"
+				+ BKN + "    (.____.-.`      \"\"`   j"
+				+ BKN + "     VvvvvvV`.Y,.    _.,-'       ,     ,     ,"
+				+ BKN + "        Y    ||,   '\"\\         ,/    ,/    ./"
+				+ BKN + "        |   ,'  ,     `-..,'_,'/___,'/   ,'/   ,"
+				+ BKN + "   ..  ,;,,',-'\"\\,'  ,  .     '     ' \"\"' '--,/    .. .."
+				+ BKN + " ,'. `.`---'     `, /  , Y -=-    ,'   ,   ,. .`-..||_|| .."
+				+ BKN + "ff\\\\`. `._        /f ,'j j , ,' ,   , f ,  \\=\\ Y   || ||`||_.."
+				+ BKN + "l` \\` `.`.\"`-..,-' j  /./ /, , / , / /l \\   \\=\\l   || `' || ||..."
+				+ BKN + " `  `   `-._ `-.,-/ ,' /`\"/-/-/-/-\"'''\"`.`.  `'.\\--`'--..`'_`' || ,"
+				+ BKN + "            \"`-_,',  ,'  f    ,   /      `._    ``._     ,  `-.`'//         ,"
+				+ BKN + "          ,-\"'' _.,-'    l_,-'_,,'          \"`-._ . \"`. /|     `.'\\ ,       |"
+				+ BKN + "        ,',.,-'\"          \\=) ,`-.         ,    `-'._`.V |       \\ // .. . /j"
+				+ BKN + "        |f\\\\               `._ )-.\"`.     /|         `.| |        `.`-||-\\\\/"
+				+ BKN + "        l` \\`                 \"`._   \"`--' j          j' j          `-`---'"
+				+ BKN + "         `  `                     \"`,-  ,'/       ,-'\"  /"
+				+ BKN + "                                 ,'\",__,-'       /,, ,-'");
+	}
+	
 	public static void sorciere() {
 		System.out.println(
 				BKN + BKN + BKN + "                             __..--,"
@@ -294,7 +316,35 @@ public class AsciiArt {
 				+ BKN + "         /____/\\____\\                                     \\____|         `88888888888P'");
 	}
 	
+	public static void hero_mendiant() {
+		System.out.println( BKN + BKN + " /\\"
+				+ BKN + " ||"
+				+ BKN + " ||"
+				+ BKN + " ||"
+				+ BKN + " ||           {}"
+				+ BKN + " ||          .--."
+				+ BKN + " ||         /.--.\\                                 _,._"
+				+ BKN + " ||         |====|                               ,'   ,`-."
+				+ BKN + " ||         |`::`|                              /     |\\  `."
+				+ BKN + "_||_    .-;`\\..../`;_.-^-._                    (  ,-,-` ). `-._ __"
+				+ BKN + " /\\\\   /  |...::..|`   :   `|                   \\|\\,'     `\\  /'  `\\"
+				+ BKN + " |:'\\ |   /'''::''|   .:.   |                    ` |, ,  /  \\ \\     \\"
+				+ BKN + "  \\ /\\;-,/\\   ::  |..:::::..|                        `,_/`, /\\,`-.__/`."
+				+ BKN + "   \\ <` >  >._::_.| ':::::' |                            | ` /    /    `-._"
+				+ BKN + "    `\"\"`  /   ^^  |   ':'   |                            `-/'    /         `-."
+				+ BKN + "          |       \\    :    /                 ;  _______,-/_   /'             \\"
+				+ BKN + "          |        \\   :   /               ---'`|       |`  ),' `---.  ,       |"
+				+ BKN + "          |___/\\___|`-.:.-`                 \\..-`--..___|_,/          /       /"
+				+ BKN + "           \\_ || _/                                    |    |`,-,...,/      ,'"
+				+ BKN + "           <_ >< _>                                    \\    | |_|   /     ,' __  r-'',"
+				+ BKN + "           |  ||  |                                     |___|/  |, /  __ /-''  `'`)  |"
+				+ BKN + "           |  ||  |                                  _,-'   ||__\\ /,-' /     _,.--|  ("
+				+ BKN + "          _\\.:||:./                               .-'       )   `(_   / _,.-'  ,-' _,/"
+				+ BKN + "         /____/\\____\\                              `-------'       `--''       `'''");
+	}
+	
 	public static void main(String[] args) {
+		//AsciiArt.boss1_alien();
 		//AsciiArt.sorciere();
 		//AsciiArt.mendiant();
 		//AsciiArt.hero();
@@ -305,6 +355,7 @@ public class AsciiArt {
 		//AsciiArt.hero_coffre();
 		//AsciiArt.hero_garde();
 		//AsciiArt.hero_auberge();
-		AsciiArt.hero_voleur();
+		//AsciiArt.hero_voleur();
+		AsciiArt.hero_mendiant();
 	}
 }
