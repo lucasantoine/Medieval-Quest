@@ -7,6 +7,7 @@ import Structure.Personnage;
 import combat.Dragon;
 import combat.PremierBoss;
 import combat.Sorciere;
+import interaction.AsciiArt;
 import interaction.Evenement;
 import interaction.Saisie;
 import menu.Context;
@@ -41,6 +42,7 @@ public class Game {
 		if(tour > 10) {
 			Saisie.clearScreenOpti();
 			System.out.println("Vous avez terrassez le terrible dragon ! Le village vous acclame comme leur nouveau hero.");
+			AsciiArt.chateauFin();
 			System.out.println("    ███      ▄██████▄      ▀█████████▄     ▄████████      ▄████████  ▄██████▄  ███▄▄▄▄       ███      ▄█  ███▄▄▄▄   ███    █▄     ▄████████ ████████▄      \n" + 
 					"▀█████████▄ ███    ███       ███    ███   ███    ███     ███    ███ ███    ███ ███▀▀▀██▄ ▀█████████▄ ███  ███▀▀▀██▄ ███    ███   ███    ███ ███   ▀███     \n" + 
 					"   ▀███▀▀██ ███    ███       ███    ███   ███    █▀      ███    █▀  ███    ███ ███   ███    ▀███▀▀██ ███▌ ███   ███ ███    ███   ███    █▀  ███    ███     \n" + 
