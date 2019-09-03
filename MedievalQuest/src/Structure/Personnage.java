@@ -2,6 +2,7 @@ package Structure;
 
 import affichage.Hud;
 import interaction.Saisie;
+import util.EStat;
 
 public abstract class Personnage {
 	private Hud hud;
@@ -29,7 +30,15 @@ public abstract class Personnage {
 	public int getArg() {
 		return this.hud.getStats()[3].getValue();
 	}
-
+	
+	public int getStatValue(EStat stat) {
+		for(int i = 0; i < hud.getStats().length; i++) {
+			if(hud.getStats()[i].getStat() == stat) return hud.getStats()[i].getValue();
+		}
+		return 0;
+	}
+	
+	
 	public Hud getHud() {
 		return hud;
 	}
