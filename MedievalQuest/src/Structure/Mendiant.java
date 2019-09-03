@@ -38,10 +38,11 @@ public class Mendiant implements IEvenement {
 		System.out.println("\nVous lui donnez quelques pièces d'or.");
 		if(p.getArg()>=40) {
 			System.out.println("Le mendiant aperçoit votre bourse pleine attachée à votre ceinture et vous insulte de radin avant de vous cracher au visage.");
-			System.out.println("Vous perdez 1 point de vie.");
-			p.getHud().getStats()[0].add(-1);
+			Saisie.pressEnter("Vous perdez 1 point de vie.\n", false);
+			p.setVie(p.getVie()-1);
 		} else {
 			Saisie.pressEnter("Le mendiant vous remercie et retourne se réfugier dans une ruelle.\n", false);
+			p.setArgent(p.getArg()-5);
 		}
 	}
 	
@@ -49,8 +50,8 @@ public class Mendiant implements IEvenement {
 		System.out.println("\nVous lui donnez une bourse remplie d'or.");
 		if(p.getArg()<=10) {
 			System.out.println("Mais vous n'avez plus d'argent ! Vous lui reprenez alors la bourse des mains, laissant votre dague tomber par inadvertance sur le sol.");
-			Saisie.pressEnter("Vous perdez 10 d'attaque.", true);
-			p.getHud().getStats()[1].add(-5);
+			Saisie.pressEnter("Vous perdez 10 d'attaque.\n", true);
+			p.getHud().getStats()[1].add(-10);
 		} else {
 			int tmp = R.nextInt(3);
 			System.out.println("Le mendiant se trouve être un ancien vétéran de guerre qui, pour vous remercier, vous apprends quelques techniques de survie.");
