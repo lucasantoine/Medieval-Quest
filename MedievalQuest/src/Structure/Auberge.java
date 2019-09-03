@@ -41,32 +41,30 @@ public class Auberge implements IEvenement{
 			int pv = p.getVie();
 			p.getHud().setVie(pv-10);
 			System.out.println("Les propri�taires de l'auberge �taient bien arm�s !");
-			//System.out.println("Vous perdez 10 pv");
-			Saisie.pressEnter("Vous perdez 10 pv", false);
+			Saisie.pressEnter("Vous perdez 10 pv\n", false);
 		}
 		
 		if(tmp == 2 || tmp ==0) {
 			int def = p.getDef();
 			p.getHud().setDefense(def + 5); 
 			System.out.println("Vous avez trouv� un bouclier en bois !");
-			//System.out.println("Vous avez gagn� 5 points de d�fense");
-			Saisie.pressEnter("Vous avez gagn� 5 points de d�fense", false);
+			Saisie.pressEnter("Vous avez gagn� 5 points de d�fense\n", false);
 		}
 	}
 	
 	public static void auberge(Personnage p) {
-		//System.out.println(p.getHud());
+		System.out.println(p.getHud());
 		AsciiArt.hero_auberge();
-		System.out.println("Vous arrivez devant l'auberge. Que souhaitez-vous faire ?");
+		System.out.println("\nVous arrivez devant l'auberge. Que souhaitez-vous faire ?");
 		System.out.println("   1. Dormir");
 		System.out.println("   2. Piller");
 		System.out.println("   3. Passer votre chemin");
 		String s = Saisie.saisie("", 3);
 		int choix = Saisie.stringToInt(s);
 		
-		//System.out.println(choix);
 		
 		Saisie.clearScreenOpti();
+		AsciiArt.hero_auberge();
 		if (choix ==1) {
 			Auberge.dormirAuberge(p);
 		}
@@ -74,11 +72,10 @@ public class Auberge implements IEvenement{
 			Auberge.pillerAuberge(p);
 		}
 		if (choix ==3) {
-			//System.out.println("Vous avez pass� votre chemin.");
-			Saisie.pressEnter("Vous avez pass� votre chemin.", false);
+			Saisie.pressEnter("\nVous avez pass� votre chemin.", false);
 		}
 		
-		System.out.println(p.getHud());
+		Saisie.clearScreenOpti();
 	}
 	
 	
