@@ -14,7 +14,7 @@ public class PremierBoss implements IEvenement{
 				+ "Vous n'avez pas d'autre choix que de sortir les armes");
 		Heros boss = new Heros(20, 5, 3, 50);
 		
-		int viebase = boss.getVie();
+		int viebase = boss.getVie(); 
 		
 		while(player.getVie() > 0 && boss.getVie() > 0) {
 			AsciiArt.hero_boss1();

@@ -7,7 +7,7 @@ public class AsciiArt {
 	public static void vieBoss5() {
 		System.out.println(
 				"╔════════════════╗" + BKN + 
-				"║ ██ ██ ██ ██ ██ ║█" + BKN + 
+				"║ ██ ██ ██ ██ ██ ║█" + BKN +  
 				"╚════════════════╝");
 	}
 

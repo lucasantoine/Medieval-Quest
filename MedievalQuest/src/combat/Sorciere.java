@@ -16,7 +16,7 @@ public class Sorciere {
 		Heros boss = new Heros(50, 3, 3, 50);
 		
 		int viebase = boss.getVie();
-		
+		 
 		while(p.getVie() > 0 && boss.getVie() > 0) {
 			AsciiArt.hero_boss2();
 			Combat.startCombat(p, boss, viebase);

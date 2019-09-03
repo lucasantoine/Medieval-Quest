@@ -16,7 +16,7 @@ public class Dragon {
 				+ "Vous sortez votre epee et vous le provoquez en lui disant : (Entrez une phrase de votre choix)\n");
 		String phrase = sc.nextLine();
 		
-		Heros boss = new Heros(100, 15, 20, 42);
+		Heros boss = new Heros(100, 15, 20, 42); 
 		
 		int viebase = boss.getVie();
 		

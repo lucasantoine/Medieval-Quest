@@ -28,7 +28,7 @@ public class Game {
 		while(player.getVie() >= 0 && player.getArg() >= 0 && tour <= 10) {
 			System.out.println(barAvancement);
 			if(tour == 5) {
-				PremierBoss.start(player);
+				PremierBoss.start(player); 
 				checkStats(player);
 			}else if(tour == 8) {
 				Sorciere.start(player);
