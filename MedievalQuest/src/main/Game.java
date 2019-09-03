@@ -36,7 +36,7 @@ public class Game {
 		Mendiant.mendiant(player);
 		checkStats(player);
 		
-		Voleur.garde(player);
+		Voleur.voleur(player);
 		checkStats(player);
 		
 		PremierBoss.start(player);
