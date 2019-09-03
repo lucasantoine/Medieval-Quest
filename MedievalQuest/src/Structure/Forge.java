@@ -11,28 +11,30 @@ public class Forge {
 	public static void acheterEpee(Personnage p) {
 		if(p.getArg() >= 20) {
 			p.getHud().setAttaque(p.getAtk()*2);
-			System.out.println("Vous avez acheté la super épée");
-			Saisie.pressEnter("Attaque *2 !", false);
+			System.out.println("\nVous avez acheté la super épée");
+			Saisie.pressEnter("Attaque *2 !\n", false);
 		}
 		if(p.getArg() < 20 ) {
-			Saisie.pressEnter("Vous êtes bien trop pauvre pour acheter cette belle épée", false);
+			Saisie.pressEnter("\nVous êtes bien trop pauvre pour acheter cette belle épée\n", false);
 		}
 	}
 	
 	public static void acheterBouclier(Personnage p) {
 		if(p.getArg() >= 25) {
 			p.getHud().setAttaque(p.getAtk()*2);
-			System.out.println("Vous avez acheté le magnifique bouclier");
-			Saisie.pressEnter("Défense *2 !", false);
+			System.out.println("\nVous avez acheté le magnifique bouclier");
+			Saisie.pressEnter("Défense *2 !\n", false);
 		}
 		if(p.getArg() < 25 ) {
-			Saisie.pressEnter("Vous êtes bien trop pauvre pour acheter cette magnifique épée", false);
+			Saisie.pressEnter("\nVous êtes bien trop pauvre pour acheter cette magnifique épée\n", false);
 		}
 	}
 	
 	public static void forge(Personnage p) {
-		//AsciiArt.forge;
-		System.out.println("Vous arrivez devant une imposante Forge. Que souhaitez-vous faire ?");
+		Saisie.clearScreenOpti();
+		System.out.println(p.getHud());
+		AsciiArt.hero_forgeron();
+		System.out.println("\nVous arrivez devant une imposante Forge. Que souhaitez-vous faire ?");
 		System.out.println("   1. Acheter une super épée");
 		System.out.println("      Coute 20$, Attaque *2");
 		System.out.println("   2. Acheter le magnifique bouclier");
@@ -42,6 +44,7 @@ public class Forge {
 		int choix = Saisie.stringToInt(s);
 		
 		Saisie.clearScreenOpti();
+		AsciiArt.hero_forgeron();
 		if (choix == 1) {
 			Forge.acheterEpee(p);
 		}
@@ -49,15 +52,15 @@ public class Forge {
 			Forge.acheterBouclier(p);
 		}
 		if (choix == 3) {
-			Saisie.pressEnter("Vous avez passé votre chemin", false);
+			Saisie.pressEnter("\nVous avez passé votre chemin\n", false);
 		}
 		
-		System.out.println(p.getHud());
+		
 	}
 	
 	public static void main(String[] args) {
 		Heros p = new Heros();
-		System.out.println(p.getHud());
+		
 		Forge.forge(p);
 	}
 
