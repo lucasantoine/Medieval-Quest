@@ -9,6 +9,7 @@ import Structure.Heros;
 import Structure.Mendiant;
 import Structure.Voleur;
 import combat.PremierBoss;
+import combat.Sorciere;
 import interaction.Evenement;
 import interaction.Saisie;
 import menu.EcranTitre;
@@ -24,25 +25,24 @@ public class Game {
 
 		
 		Coffre.coffre(player);
-		
 		Game.checkStats(player);		
 		
 		Auberge.auberge(player);
-		
 		Game.checkStats(player);
-		
 		
 		Garde.garde(player);
-		
 		Game.checkStats(player);
-		
-		PremierBoss.start(player);
-		checkStats(player);
 		
 		Mendiant.mendiant(player);
 		checkStats(player);
 		
 		Voleur.garde(player);
+		checkStats(player);
+		
+		PremierBoss.start(player);
+		checkStats(player);
+		
+		Sorciere.start(player);
 		checkStats(player);
 		
 		
@@ -51,7 +51,7 @@ public class Game {
 	
 	public static void checkStats(Heros player) {
 		if(player.getVie() <=0) {
-			System.out.println("Vous �tes mort par KO !");
+			System.out.println("Vous etes mort par KO !");
 			System.out.println("Plus de vie.");
 			System.exit(0);
 		}
@@ -62,7 +62,7 @@ public class Game {
 			player.getHud().setDefense(0);
 		}
 		if(player.getArg() < 0 ) {
-			System.out.println("Vous �tes ruin� !");
+			System.out.println("Vous etes ruine !");
 			System.out.println("Plus d'argent");
 			System.exit(0);
 			
