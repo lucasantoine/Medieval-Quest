@@ -4,8 +4,9 @@ public class AsciiArt {
 
 	public static final String BKN = System.getProperty("line.separator");
 
-	public static void sorciere() {
-		System.out.println("                             __..--,"
+	public static void sorciere() { //23 -> 26
+		System.out.println(
+				BKN + BKN + BKN + "                             __..--,"
 				+ BKN + "                          .-'     /"
 				+ BKN + "                        .`       /"
 				+ BKN + "                       /         |"
@@ -29,9 +30,10 @@ public class AsciiArt {
 				+ BKN + "              /___/Y_/-` |            `=-._=-._="
 				+ BKN + "                   /___/Y                  =-.");
 	}
-	
-	public static void mendiant() {
-		System.out.println("        _,._"
+
+	public static void mendiant() { //18 -> 26
+		System.out.println(
+				BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + "        _,._"
 				+ BKN + "      ,'   ,`-."
 				+ BKN + "     /     |\\  `."
 				+ BKN + "    (  ,-,-` ). `-._ __"
@@ -51,8 +53,9 @@ public class AsciiArt {
 				+ BKN + "        `-------'       `--''       `'''");
 	}
 
-	public static void hero() {
-		System.out.println(" /\\" 
+	public static void hero() { //24 -> 26
+		System.out.println(
+				BKN + BKN + " /\\" 
 				+ BKN + " ||"
 				+ BKN + " ||"
 				+ BKN + " ||"
@@ -78,8 +81,9 @@ public class AsciiArt {
 				+ BKN + "         /____/\\____\\");
 	}
 
-	public static void coffre() {
-		System.out.println("       ____...------------...____"
+	public static void coffre() { //16 -> 26
+		System.out.println(
+				BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + BKN + "       ____...------------...____"
 				+ BKN + "  _.-\"` /o/__ ____ __ __  __ \\o\\_`\"-._"
 				+ BKN + ".'     / /                    \\ \\     '."
 				+ BKN + "|=====/o/======================\\o\\=====|"
@@ -97,7 +101,7 @@ public class AsciiArt {
 				+ BKN + " `\"\"\"\"-\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"-\"\"\"\"`");
 	}
 
-	public static void auberge() {
+	public static void auberge() { //26
 		System.out.println("          +           __        ____"
 				+ BKN + "         /^\\----------][-------/ JL \\"
 				+ BKN + "        /   \\        /__\\     |  ][  |"
@@ -120,14 +124,15 @@ public class AsciiArt {
 				+ BKN + "    ||||[_]|[_]||| = |---|   ||| || |||"
 				+ BKN + "    ||||.-.|.-.|||,,,|,,,|,,,||| || |||"
 				+ BKN + "    ||||| ||| ||||&&&&&&&&&&&&'-'--'-'|"
-				+ BKN + "    |||||_|||_|||||\"___\"\"___\"| __= __ |"
+				+ BKN + "    |||||_|||_|||||\"___\"\"___\"| __= __ int horizontalAlignment|"
 				+ BKN + " ___|||=========||||[_]||[_]|||[]||[]||___"
 				+ BKN + " |   ; =========== |!!!!!!!!!!!!!!!!!!!|   |"
 				+ BKN + "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"");
 	}
 
-	public static void garde() {
-		System.out.println("  ,   A           {}"
+	public static void garde() { //20 -> 26
+		System.out.println(
+				BKN + BKN + BKN + BKN + BKN + BKN + "  ,   A           {}"
 				+ BKN + " / \\, | ,        .--."
 				+ BKN + "|    =|= >      /.--.\\"
 				+ BKN + " \\ /` | `       |====|"
@@ -148,13 +153,42 @@ public class AsciiArt {
 				+ BKN + "      |       _\\.:||:./_"
 				+ BKN + "      |      /____/\\____\\");
 	}
+
+	public static void hero_coffre() {
+		System.out.println(
+				BKN + BKN +	" /\\"
+				+ BKN + " ||"
+				+ BKN + " ||"
+				+ BKN + " ||"
+				+ BKN + " ||           {}"
+				+ BKN + " ||          .--."
+				+ BKN + " ||         /.--.\\"
+				+ BKN + " ||         |====|"
+				+ BKN + " ||         |`::`|                           ____...------------...____"
+				+ BKN + "_||_    .-;`\\..../`;_.-^-._            _.-\"` /o/__ ____ __ __  __ \\o\\_`\"-._"
+				+ BKN + " /\\\\   /  |...::..|`   :   `|        .'     / /                    \\ \\     '."
+				+ BKN + " |:'\\ |   /'''::''|   .:.   |        |=====/o/======================\\o\\=====|"
+				+ BKN + "  \\ /\\;-,/\\   ::  |..:::::..|        |____/_/________..____..________\\_\\____|"
+				+ BKN + "   \\ <` >  >._::_.| ':::::' |        /   _/ \\_     <_o#\\__/#o_>     _/ \\_   \\"
+				+ BKN + "    `\"\"`  /   ^^  |   ':'   |        \\_________       \\####/       _________/"
+				+ BKN + "          |       \\    :    /         |===\\!/========================\\!/===|"
+				+ BKN + "          |        \\   :   /          |   |=|          .---.         |=|   |"
+				+ BKN + "          |___/\\___|`-.:.-`           |===|o|=========/     \\========|o|===|"
+				+ BKN + "           \\_ || _/                   |   | |         \\() ()/        | |   |"
+				+ BKN + "           <_ >< _>                   |===|o|======{'-.) A (.-'}=====|o|===|"
+				+ BKN + "           |  ||  |                   | __/ \\__     '-.\\uuu/.-'    __/ \\__ |"
+				+ BKN + "           |  ||  |                   |====          .'.'^'.'.         ====|"
+				+ BKN + "          _\\.:||:./                   |_\\o/     __  {.' __  '.}  __    \\o/_|"
+				+ BKN + "         /____/\\____\\                 `\"\"\"\"-\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"-\"\"\"\"`");
+	}
 	
-	/*public static void main(String[] args) {
-		AsciiArt.sorciere();
+	public static void main(String[] args) {
+		/*AsciiArt.sorciere();
 		AsciiArt.mendiant();
-		AsciiArt.hero();
+		AsciiArt.hero();*/
 		AsciiArt.coffre();
-		AsciiArt.auberge();
-		AsciiArt.garde();
-	}*/
+		/*AsciiArt.auberge();
+		AsciiArt.garde();*/
+		AsciiArt.hero_coffre();
+	}
 }

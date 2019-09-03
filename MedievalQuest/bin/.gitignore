@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-/util/
-<<<<<<< HEAD
-/affichage/
-=======
-/main/
->>>>>>> a299e53eaa98799c2afe3aa892256585d78f9190
-=======
-/main/
-/util/
 /Structure/
->>>>>>> 0de1602054967323ea4960a4c0c17fdc672f607a
+/affichage/
 /interaction/
+/main/
+/menu/
+/util/

@@ -2,10 +2,11 @@ package menu;
 
 import java.util.Scanner;
 
+import interaction.Saisie;
+
 public class EcranTitre {
-	public static void main(String[] args) { 
-		System.out.println("\n\n\n\n");
-		System.out.println(
+	public static void showHomeScreen() {
+		String messageToShow ="\n\n\n\n"+ 
 				"       ▄▄▄▄███▄▄▄▄      ▄████████ ████████▄   ▄█     ▄████████  ▄█    █▄     ▄████████  ▄█            ████████▄   ███    █▄     ▄████████    ▄████████     ███          \r\n" + 
 				"      ▄██▀▀▀███▀▀▀██▄   ███    ███ ███   ▀███ ███    ███    ███ ███    ███   ███    ███ ███            ███    ███  ███    ███   ███    ███   ███    ███ ▀█████████▄      \r\n" + 
 				"      ███   ███   ███   ███    █▀  ███    ███ ███▌   ███    █▀  ███    ███   ███    ███ ███            ███    ███  ███    ███   ███    █▀    ███    █▀     ▀███▀▀██      \r\n" + 
@@ -14,18 +15,12 @@ public class EcranTitre {
 				"      ███   ███   ███   ███    █▄  ███    ███ ███    ███    █▄  ███    ███   ███    ███ ███            ███    ███  ███    ███   ███    █▄           ███     ███          \r\n" + 
 				"      ███   ███   ███   ███    ███ ███   ▄███ ███    ███    ███ ███    ███   ███    ███ ███▌    ▄      ███  ▀ ███  ███    ███   ███    ███    ▄█    ███     ███          \r\n" + 
 				"       ▀█   ███   █▀    ██████████ ████████▀  █▀     ██████████  ▀██████▀    ███    █▀  █████▄▄██       ▀██████▀▄█ ████████▀    ██████████  ▄████████▀     ▄████▀        \r\n" + 
-				"                                                                                   ▀                                                                                ");  
-		System.out.println("\n\n\n\n");
-		System.out.println("          Appuyez sur entrée pour jouer");
+				"                                                                                   ▀                                                                                " +
+				"\n\n\n\n" +
+				"          Appuyez sur ENTER pour jouer";
 		
-		Scanner sc = new Scanner(System.in);
-		sc.nextLine();
-		sc.close();
-		
-		for(int i=0 ; i<100 ; i++) {
-			System.out.println("");
-		}
-		
+		Saisie.pressEnter(messageToShow, true);
+		Saisie.clearScreenOpti();
 	}
 	
 
