@@ -57,15 +57,4 @@ public class Garde {
 		System.out.println("Pensiez-vous vraiment pouvoir échapper à un garde ? Il vous rattrappe aisément et vous plante son épée dans la jambe.");
 		p.getHud().getStats()[0].add(-10);
 	}
-	
-	
-	public static void main(String[] args) {
-		Heros h = new Heros();
-		h.getHud().getStats()[3].add(100);
-		System.out.println(h.getHud().toString());
-		Garde.getChoix(2, h);
-		System.out.println(h.getHud().toString());
-	}
-	
-
 }
