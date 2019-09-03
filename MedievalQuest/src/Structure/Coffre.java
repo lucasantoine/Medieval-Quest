@@ -1,14 +1,12 @@
 package Structure;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Coffre {
 	public static final String BKN = System.getProperty("line.separator");
 	
 	public static final Random R = new Random();
-	private static Scanner sc = new Scanner(System.in);
-	
+
 	private static String image = "       ____...------------...____"
 			+ BKN + "  _.-\"` /o/__ ____ __ __  __ \\o\\_`\"-._"
 			+ BKN + ".'     / /                    \\ \\     '."
@@ -37,8 +35,6 @@ public class Coffre {
 		}
 		System.out.println();
 		System.out.println("Appuyez sur <Entrée> pour continuer.");
-		sc.nextLine();
-		sc.close();
 	}
 	
 	private static boolean bonus() {

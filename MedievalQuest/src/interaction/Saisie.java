@@ -46,10 +46,9 @@ public class Saisie {
 			
 			valide = Saisie.saisieValide(saisieUser, maxVal);
 		}
-
-		sc.close();
 		
 		return saisieUser;
+
 	}
 	
 	public static int stringToInt(String saisie) {
