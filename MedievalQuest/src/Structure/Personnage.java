@@ -4,9 +4,11 @@ import affichage.Hud;
 import interaction.Saisie;
 import util.EStat;
 import util.Effet;
+import util.Statistique;
 
 public abstract class Personnage {
 	private Hud hud;
+	private boolean attaque = false;
 	
 	public Personnage(int vie, int atk, int def, int arg) {
 		this.hud = new Hud(vie, atk, def, arg);
@@ -48,15 +50,19 @@ public abstract class Personnage {
 		hud.setArgent(argent);
 	}
 	
-	public int getStatValue(EStat stat) {
+	public Statistique getStatValue(EStat stat) {
 		for(int i = 0; i < hud.getStats().length; i++) {
-			if(hud.getStats()[i].getStat() == stat) return hud.getStats()[i].getValue();
+			if(hud.getStats()[i].getStat() == stat) return hud.getStats()[i];
 		}
-		return 0;
+		return null;
 	}
 	
 	public void doEffet(Effet effet) {
-		
+		if(!isAttaque()) {
+			getStatValue(effet.getStat()).add(getDef()-effet.getVal());
+		}else {
+			getStatValue(effet.getStat()).add(-effet.getVal());
+		}
 	}
 	
 	
@@ -82,4 +88,13 @@ public abstract class Personnage {
 	}
 	
 	public abstract String getImage();
+
+	public boolean isAttaque() {
+		return attaque;
+	}
+
+	public void setAttaqueBool(boolean attaque) {
+		this.attaque = attaque;
+	}
+	
 }

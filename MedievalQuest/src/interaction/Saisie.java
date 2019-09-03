@@ -58,16 +58,16 @@ public class Saisie {
 		
 		while (! valide) {
 			
-			if(clearScreen) {
-				Saisie.clearScreenOpti();
-			}
-			
 			if(messageToShow != null) {
 				System.out.print(messageToShow);
 			}
 			saisieUser = sc.nextLine();
 			
 			valide = saisieUser.length() == 0;
+			
+			if(clearScreen) {
+				Saisie.clearScreenOpti();
+			}
 		}
 	}
 	
