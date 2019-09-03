@@ -67,7 +67,7 @@ public class Mendiant implements IEvenement {
 		} else {
 			System.out.println("La garde vous a repéré et ne met pas longtemps à vous maîtriser afin de vous rouer de coups en public. Vous l'avez bien mérité.");
 			Saisie.pressEnter("Vous perdez 15 points de vie.\n", true);
-			p.getHud().getStats()[0].add(-5);
+			p.setVie(p.getVie()-15);
 		}
 	}
 	

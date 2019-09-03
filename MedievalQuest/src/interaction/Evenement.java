@@ -8,7 +8,9 @@ import java.util.Random;
 
 import Structure.Auberge;
 import Structure.Coffre;
+import Structure.Forge;
 import Structure.Garde;
+import Structure.Maison;
 import Structure.Mendiant;
 import Structure.Personnage;
 import Structure.Pretre;
@@ -31,7 +33,7 @@ public class Evenement {
 	
 	public static void launchRandomEvent(Personnage p) {
 		Random r = new Random();
-		switch(r.nextInt(7)) {
+		switch(r.nextInt(8)) {
 			case 0:
 				Auberge.auberge(p);
 				break;
@@ -51,8 +53,10 @@ public class Evenement {
 				Voleur.voleur(p);
 				break;
 			case 6:
-				Coffre.coffre(p);
+				Maison.maison(p);
 				break;
+			case 7:
+				Forge.forge(p);
 		}
 		Game.checkStats(p);
 	}

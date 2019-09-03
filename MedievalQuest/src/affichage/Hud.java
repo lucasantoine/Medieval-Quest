@@ -3,7 +3,7 @@ package affichage;
 import util.EStat;
 import util.Statistique;
 
-public class Hud {
+public class Hud {	
 	private Statistique[] stats = new Statistique[4];	
 	
 	public Hud(int vie, int attaque, int defense, int argent) {

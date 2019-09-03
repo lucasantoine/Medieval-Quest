@@ -1,11 +1,14 @@
 package Structure;
 
+import interaction.AsciiArt;
 import interaction.Saisie;
 import util.IEvenement;
 
 public class Maison implements IEvenement {
 	
 	public static void maison(Personnage p) {
+		System.out.println(p.getHud());
+		AsciiArt.hero_maisonHantee();
 		System.out.println("\nVous apercevez de la lumière qui s'échappe d'une maison abandonnée depuis des années.");
 		String s = Saisie.saisie("Que voulez vous faire ? (1 - Frapper à la porte, 2 - Entrer sans frapper, 3 - Partir sans entrer) : \n", 3);
 		int choix = Saisie.stringToInt(s);

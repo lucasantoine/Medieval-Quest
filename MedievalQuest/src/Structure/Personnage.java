@@ -59,7 +59,7 @@ public abstract class Personnage {
 	
 	public void doEffet(Effet effet) {
 		if(!isAttaque()) {
-			getStatValue(effet.getStat()).add(getDef()-effet.getVal());
+			getStatValue(effet.getStat()).add(-(effet.getVal()-getDef()));
 		}else {
 			getStatValue(effet.getStat()).add(-effet.getVal());
 		}

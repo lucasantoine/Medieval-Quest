@@ -10,6 +10,7 @@ import Structure.Mendiant;
 import Structure.Personnage;
 import Structure.Pretre;
 import Structure.Voleur;
+import combat.Dragon;
 import combat.PremierBoss;
 import combat.Sorciere;
 import interaction.Evenement;
@@ -35,6 +36,9 @@ public class Game {
 				checkStats(player);
 			}else if(tour == 8) {
 				Sorciere.start(player);
+				checkStats(player);
+			}else if(tour == 10) {
+				Dragon.star(player);
 				checkStats(player);
 			}else{ 
 				Evenement.launchRandomEvent(player);
