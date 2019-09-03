@@ -21,13 +21,13 @@ public class Auberge implements IEvenement{
 			int argent = p.getArg();
 			argent = argent /3 *2;
 			p.getHud().setArgent(argent);
-			System.out.println("Vous vous �tes fait d�pouiller !");
+			System.out.println("\nVous vous �tes fait d�pouiller !");
 			System.out.println("Vous perdez 1/3 de votre argent");
 			
 		}
 		
-		//System.out.println("Vous avez gagn� 20 points de vie!")
-		Saisie.pressEnter("Vous avez gagn� 20 points de vie!", false);
+		
+		Saisie.pressEnter("\nVous avez gagn� 20 points de vie!\n", false);
 		
 		
 		
@@ -58,7 +58,7 @@ public class Auberge implements IEvenement{
 		System.out.println("\nVous arrivez devant l'auberge. Que souhaitez-vous faire ?");
 		System.out.println("   1. Dormir");
 		System.out.println("   2. Piller");
-		System.out.println("   3. Passer votre chemin");
+		System.out.println("   3. Passer votre chemin\n");
 		String s = Saisie.saisie("", 3);
 		int choix = Saisie.stringToInt(s);
 		
@@ -72,7 +72,7 @@ public class Auberge implements IEvenement{
 			Auberge.pillerAuberge(p);
 		}
 		if (choix ==3) {
-			Saisie.pressEnter("\nVous avez pass� votre chemin.", false);
+			Saisie.pressEnter("\nVous avez pass� votre chemin.\n", false);
 		}
 		
 		Saisie.clearScreenOpti();

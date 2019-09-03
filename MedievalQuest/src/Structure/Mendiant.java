@@ -12,8 +12,12 @@ public class Mendiant implements IEvenement {
 	public static void mendiant(Personnage p) {
 		System.out.println(p.getHud());
 		AsciiArt.hero_mendiant();
-		System.out.println("Alors que vous marchez tranquillement dans la rue, un mendiant vous tire par le bras et vous implore de lui donner quelques pièces d'or.");
-		String s = Saisie.saisie("Que souhaitez vous faire ? (1 - Lui donner de l'argent (5$), 2 - Lui donner beaucoup d'argent (10$), 3 - Le frapper, 4 - L'ignorer) : \n", 4);
+		System.out.println("\nAlors que vous marchez tranquillement dans la rue, un mendiant vous tire par le bras et vous implore de lui donner quelques pièces d'or. Que souhaitez-vous faire?");
+		System.out.println("   1.Lui donner de l'argent (5$");
+		System.out.println("   2.Lui donner de l'argent (10$)");
+		System.out.println("   3.Le frapper");
+		System.out.println("   4.L'ignorer\n");
+		String s = Saisie.saisie("", 4);
 		int choix = Saisie.stringToInt(s);
 		Saisie.clearScreenOpti();
 		AsciiArt.hero_mendiant();
