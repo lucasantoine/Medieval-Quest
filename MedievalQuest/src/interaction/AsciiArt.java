@@ -356,6 +356,6 @@ public class AsciiArt {
 		//AsciiArt.hero_garde();
 		//AsciiArt.hero_auberge();
 		//AsciiArt.hero_voleur();
-		AsciiArt.hero_mendiant();
+		//AsciiArt.hero_mendiant();
 	}
 }
