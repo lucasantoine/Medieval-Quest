@@ -26,6 +26,9 @@ public class Coffre implements IEvenement{
 		if(choix == 1) {
 			Coffre.ouvrirCoffre(p);
 		}
+		if(choix == 2) {
+			Saisie.pressEnter("\nVous passez votre chemin\n", false);
+		}
 		System.out.println(p.getHud());
 		Saisie.clearScreenOpti();
 	}

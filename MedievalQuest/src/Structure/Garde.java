@@ -38,7 +38,7 @@ public class Garde implements IEvenement {
 	private static void seduire(Personnage p) {
 		System.out.println("\nVous tentez de séduire le garde.");
 		if(R.nextInt(2)==1) {
-			Saisie.pressEnter("Il semble intéressé par vous et souhaite vous revoir ce soir. Il vous glisse un morceau de papier dans votre poche arrière et vous laisse passer.", false);	
+			Saisie.pressEnter("Il semble intéressé par vous et souhaite vous revoir ce soir. Il vous glisse un morceau de papier dans votre poche arrière et vous laisse passer.\n", false);	
 		} else {
 			System.out.println("\nVous pensiez vraiment pouvoir séduire un garde ? Vexé, il vous frappe au visage et vous vole 5 pièces d'or.");
 			Saisie.pressEnter("Vous perdez 5 points de vie.\n", true);

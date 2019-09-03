@@ -53,6 +53,7 @@ public class Auberge implements IEvenement{
 	}
 	
 	public static void auberge(Personnage p) {
+		Saisie.clearScreenOpti();
 		System.out.println(p.getHud());
 		AsciiArt.hero_auberge();
 		System.out.println("\nVous arrivez devant l'auberge. Que souhaitez-vous faire ?");

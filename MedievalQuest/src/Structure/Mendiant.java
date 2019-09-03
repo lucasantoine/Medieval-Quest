@@ -63,7 +63,7 @@ public class Mendiant implements IEvenement {
 	private static void frapper(Personnage p) {
 		System.out.println("\nVous le repoussez violemment et l'éloignez d'un coup de pied, tout en criant qu'il ne fallait pas salir votre armure.");
 		if(R.nextInt(3)==2) {
-			Saisie.pressEnter("La garde semble ne pas vous avoir entendu et continue sa patrouille tranquillement.", false);
+			Saisie.pressEnter("La garde semble ne pas vous avoir entendu et continue sa patrouille tranquillement.\n", false);
 		} else {
 			System.out.println("La garde vous a repéré et ne met pas longtemps à vous maîtriser afin de vous rouer de coups en public. Vous l'avez bien mérité.");
 			Saisie.pressEnter("Vous perdez 15 points de vie.\n", true);

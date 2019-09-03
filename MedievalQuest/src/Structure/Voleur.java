@@ -14,6 +14,7 @@ public class Voleur implements IEvenement{
 
 	
 	public static void voleur(Personnage p) {
+		Saisie.clearScreenOpti();
 		System.out.println(p.getHud());
 		AsciiArt.hero_voleur();
 		System.out.println("\nVous croisez la route d'un perfide Voleur !");
