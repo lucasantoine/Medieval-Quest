@@ -2,12 +2,24 @@ package Structure;
 
 import java.util.Random;
 
+import interaction.Saisie;
+
 public class Garde {
 	public static final String BKN = System.getProperty("line.separator");
 	public static final Random R = new Random();
 
 	
-	public static void getChoix(int choix, Personnage p) {
+	public static void garde(Personnage p) {
+		System.out.println("Vous arrivez en face d'un garde menacant.");
+		String s = Saisie.saisie("Que souhaitez vous faire (1 - seduire, 2 - payer, 3 - intimider, 4 - fuir) : \n", 4);
+		int choix = Saisie.stringToInt(s);
+		Saisie.clearScreenOpti();
+		Garde.getChoix(choix, p);
+	}
+	
+	
+	
+	private static void getChoix(int choix, Personnage p) {
 		switch(choix) {
 		case 1 : Garde.seduire(p); break;
 		case 2 : Garde.payer(p); break;

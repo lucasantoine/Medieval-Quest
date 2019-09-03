@@ -30,11 +30,8 @@ public class Game {
 			System.exit(0);
 		}
 		
-		System.out.println("Vous arrivez en face d'un garde menacant.");
-		s = Saisie.saisie("Que souhaitez vous faire (1 - seduire, 2 - payer, 3 - intimider, 4 - fuir) : \n", 4);
-		choix = Saisie.stringToInt(s);
-		Saisie.clearScreenOpti();
-		Garde.getChoix(choix, player);
+		
+		Garde.garde(player);
 		System.out.println(player.getHud());
 		if(player.getVie() <= 0  || player.getArg() <= 0) {
 			System.out.println("Vous avez perdu !");
