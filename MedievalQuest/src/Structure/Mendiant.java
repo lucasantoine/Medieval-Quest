@@ -33,7 +33,7 @@ public class Mendiant implements IEvenement {
 		Saisie.pressEnter("Vous lui donnez quelques pièces d'or.", false);
 		if(p.getArg()>=40) {
 			Saisie.pressEnter("Le mendiant aperçoit votre bourse pleine attachée à votre ceinture et vous insulte de radin avant de vous cracher au visage.",false);
-			Saisie.pressEnter("HP -1", false);
+			Saisie.pressEnter("Vous perdez 1 point de vie.", false);
 			p.getHud().getStats()[0].add(-1);
 		} else {
 			Saisie.pressEnter("Le mendiant vous remercie et retourne se réfugier dans une ruelle.", false);
@@ -44,12 +44,12 @@ public class Mendiant implements IEvenement {
 		Saisie.pressEnter("Vous lui donnez une bourse remplie d'or.", false);
 		if(p.getArg()<=10) {
 			Saisie.pressEnter("Mais vous n'avez plus d'argent ! Vous lui reprenez alors la bourse des mains, laissant votre dague tomber par inadvertance sur le sol.", false);
-			Saisie.pressEnter("ATK -5", false);
+			Saisie.pressEnter("Vous perdez 10 d'attaque.", true);
 			p.getHud().getStats()[1].add(-5);
 		} else {
 			int tmp = R.nextInt(3);
 			Saisie.pressEnter("Le mendiant se trouve être un ancien vétéran de guerre qui, pour vous remercier, vous apprends quelques techniques de survie.", false);
-			Saisie.pressEnter("$ -10, "+p.getHud().getStats()[tmp].getStat().getSymbole()+" +5", false);
+			Saisie.pressEnter("$ -10, "+p.getHud().getStats()[tmp].getStat().getSymbole()+" +5", true);
 			p.getHud().getStats()[3].add(-10);
 			p.getHud().getStats()[tmp].add(5);
 		}
@@ -61,7 +61,7 @@ public class Mendiant implements IEvenement {
 			Saisie.pressEnter("Heureusement pour vous la garde semble ne pas vous avoir entendu et continue sa patrouille tranquillement.", false);
 		} else {
 			Saisie.pressEnter("La garde vous a repéré et ne met pas longtemps à vous maîtriser afin de vous rouer de coups en public. Vous l'avez bien mérité.", false);
-			Saisie.pressEnter("HP -15", false);
+			Saisie.pressEnter("Vous perdez 15 points de vie.", true);
 			p.getHud().getStats()[0].add(-5);
 		}
 	}
@@ -69,7 +69,7 @@ public class Mendiant implements IEvenement {
 	private static void ignorer(Personnage p) {
 		Saisie.pressEnter("Vous faites comme si personne ne vous avez parlé et continuez votre chemin.", false);
 		Saisie.pressEnter("Quelques mètres plus loin vous vous sentez plus léger et remarquez que vous ne portez plus votre bouclier. Vous avez été volé par le mendiant.", false);
-		Saisie.pressEnter("DEF -10", false);
+		Saisie.pressEnter("Vous perdez 10 de défense.", true);
 		p.getHud().getStats()[2].add(-10);
 	}
 }
