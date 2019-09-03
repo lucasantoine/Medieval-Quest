@@ -75,15 +75,18 @@ public abstract class Personnage {
 	}
 
 	public void choseClasse() {
-		String saisie = Saisie.saisie("Quelle classe aimerez vous atteindre : 1 - Chevalier, 2 - Assassin, 3 - Tank :", 3);
+		Saisie.clearScreenOpti();
+		String saisie = Saisie.saisie("De quelle classe venez  vous : 1 - Chevalier, 2 - Assassin, 3 - Tank, 4 - Noble:", 4);
 		int saisieToString = Saisie.stringToInt(saisie);
 		
 		if(saisieToString == 1) {
 			this.setHud(new Hud(30, 5, 5, 20));
 		}else if(saisieToString == 2) {
-			this.setHud(new Hud(20, 10, 5, 20));
+			this.setHud(new Hud(20, 15, 5, 20));
 		}else if(saisieToString == 3) {
-			this.setHud(new Hud(20, 5, 10, 20));
+			this.setHud(new Hud(20, 5, 15, 20));
+		}else if(saisieToString == 4) {
+			this.setHud(new Hud(5, 5, 20, 30));
 		}
 	}
 	
