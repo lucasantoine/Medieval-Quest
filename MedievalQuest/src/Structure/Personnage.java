@@ -4,7 +4,15 @@ import affichage.Hud;
 import interaction.Saisie;
 
 public abstract class Personnage {
-	private Hud hud = new Hud();
+	private Hud hud;
+	
+	public Personnage(int vie, int atk, int def, int arg) {
+		this.hud = new Hud(vie, atk, def, arg);
+	}
+	
+	public Personnage() {
+		this.hud = new Hud();
+	}
 	
 	public int getVie() {
 		return this.hud.getStats()[0].getValue();
