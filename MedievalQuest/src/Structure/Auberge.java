@@ -4,19 +4,13 @@ import java.util.Random;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
+import util.IEvenement;
 
-public class Auberge {
+public class Auberge implements IEvenement{
 	public static int gainVieDormir = 20;
 	
 	public static final Random R = new Random();
 	
-	
-	
-	
-	
-	public void getImage() {
-		AsciiArt.auberge();
-	}
 	
 	public static void dormirAuberge(Personnage p) {
 		int pv = p.getVie();
@@ -27,13 +21,13 @@ public class Auberge {
 			int argent = p.getArg();
 			argent = argent /3 *2;
 			p.getHud().setArgent(argent);
-			System.out.println("Vous vous êtes fait dépouiller !");
+			System.out.println("Vous vous ï¿½tes fait dï¿½pouiller !");
 			System.out.println("Vous perdez 1/3 de votre argent");
 			
 		}
 		
-		//System.out.println("Vous avez gagné 20 points de vie!")
-		Saisie.pressEnter("Vous avez gagné 20 points de vie!", false);
+		//System.out.println("Vous avez gagnï¿½ 20 points de vie!")
+		Saisie.pressEnter("Vous avez gagnï¿½ 20 points de vie!", false);
 		
 		
 		
@@ -46,7 +40,7 @@ public class Auberge {
 		if(tmp == 1) {
 			int pv = p.getVie();
 			p.getHud().setVie(pv-10);
-			System.out.println("Les propriétaires de l'auberge étaient bien armés !");
+			System.out.println("Les propriï¿½taires de l'auberge ï¿½taient bien armï¿½s !");
 			//System.out.println("Vous perdez 10 pv");
 			Saisie.pressEnter("Vous perdez 10 pv", false);
 		}
@@ -54,15 +48,15 @@ public class Auberge {
 		if(tmp == 2 || tmp ==0) {
 			int def = p.getDef();
 			p.getHud().setDefense(def + 5); 
-			System.out.println("Vous avez trouvé un bouclier en bois !");
-			//System.out.println("Vous avez gagné 5 points de défense");
-			Saisie.pressEnter("Vous avez gagné 5 points de défense", false);
+			System.out.println("Vous avez trouvï¿½ un bouclier en bois !");
+			//System.out.println("Vous avez gagnï¿½ 5 points de dï¿½fense");
+			Saisie.pressEnter("Vous avez gagnï¿½ 5 points de dï¿½fense", false);
 		}
 	}
 	
 	public static void auberge(Personnage p) {
 		//System.out.println(p.getHud());
-		AsciiArt.auberge();
+		AsciiArt.hero_auberge();
 		System.out.println("Vous arrivez devant l'auberge. Que souhaitez-vous faire ?");
 		System.out.println("   1. Dormir");
 		System.out.println("   2. Piller");
@@ -80,7 +74,7 @@ public class Auberge {
 			Auberge.pillerAuberge(p);
 		}
 		if (choix ==3) {
-			System.out.println("Vous avez passé votre chemin.");
+			System.out.println("Vous avez passï¿½ votre chemin.");
 		}
 		
 		System.out.println(p.getHud());

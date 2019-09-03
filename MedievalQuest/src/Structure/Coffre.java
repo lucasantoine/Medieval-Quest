@@ -4,8 +4,9 @@ import java.util.Random;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
+import util.IEvenement;
 
-public class Coffre {
+public class Coffre implements IEvenement{
 	public static final String BKN = System.getProperty("line.separator");
 	
 	public static final Random R = new Random();

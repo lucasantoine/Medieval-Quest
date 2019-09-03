@@ -6,7 +6,10 @@ import Structure.Auberge;
 import Structure.Coffre;
 import Structure.Garde;
 import Structure.Heros;
+import Structure.Mendiant;
+import Structure.Voleur;
 import combat.PremierBoss;
+import interaction.Evenement;
 import interaction.Saisie;
 import menu.EcranTitre;
 
@@ -14,6 +17,7 @@ public class Game {
 	public static void main(String[] args) {
 		EcranTitre.showHomeScreen();
 		Heros player = new Heros();
+		Evenement event = new Evenement(new Coffre(), new Garde(), new Voleur(), new Mendiant(), new Auberge());
 		player.choseClasse();
 		Saisie.clearScreenOpti();
 		
@@ -21,8 +25,7 @@ public class Game {
 		
 		Coffre.coffre(player);
 		
-		Game.checkStats(player);
-		
+		Game.checkStats(player);		
 		
 		Auberge.auberge(player);
 		
@@ -34,6 +37,12 @@ public class Game {
 		Game.checkStats(player);
 		
 		PremierBoss.start(player);
+		checkStats(player);
+		
+		Mendiant.mendiant(player);
+		checkStats(player);
+		
+		Voleur.garde(player);
 		checkStats(player);
 		
 		

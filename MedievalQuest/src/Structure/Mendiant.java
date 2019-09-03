@@ -2,6 +2,7 @@ package Structure;
 
 import java.util.Random;
 
+import interaction.AsciiArt;
 import interaction.Saisie;
 import util.IEvenement;
 
@@ -9,6 +10,8 @@ public class Mendiant implements IEvenement {
 	public static final Random R = new Random();
 
 	public static void mendiant(Personnage p) {
+		System.out.println(p.getHud());
+		AsciiArt.hero_mendiant();
 		System.out.println("Alors que vous marchez tranquillement dans la rue, un mendiant vous tire par le bras et vous implore de lui donner quelques pièces d'or.");
 		String s = Saisie.saisie("Que souhaitez vous faire ? (1 - Lui donner de l'argent (5$), 2 - Lui donner beaucoup d'argent (10$), 3 - Le frapper, 4 - L'ignorer) : \n", 4);
 		int choix = Saisie.stringToInt(s);

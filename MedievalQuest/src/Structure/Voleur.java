@@ -2,6 +2,7 @@ package Structure;
 
 import java.util.Random;
 
+import interaction.AsciiArt;
 import interaction.Saisie;
 import util.IEvenement;
 
@@ -13,6 +14,8 @@ public class Voleur implements IEvenement{
 
 	
 	public static void garde(Personnage p) {
+		System.out.println(p.getHud());
+		AsciiArt.hero_voleur();
 		System.out.println("Vous croisez la route d'un perfide Voleur !");
 		String s = Saisie.saisie("Que souhaitez vous faire (1 - Voler, 2 - Appeler la Garde, 3 - Se cacher) : \n", 4);
 		int choix = Saisie.stringToInt(s);
