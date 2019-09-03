@@ -28,11 +28,13 @@ public class Maison implements IEvenement {
 	private static void frapper(Personnage p) {
 		System.out.println("\n Vous frappez à la porte si fort qu'elle se détruit. Tout comme la maison. Vous repartez après vous être péniblement sorti des décombres.");
 		Saisie.pressEnter("Vous perdez 10 points de vie.\n", true);
+		p.getHud().getStats()[0].add(-10);
 	}
 	
 	private static void entrer(Personnage p) {
 		System.out.println("\n Vous entrez et surprenez un mage de sang faisant un rituel. Vous parvenez à le convaincre de vous offrir de la durée de vie contre votre silence sur ses activités.");
 		Saisie.pressEnter("Vous gagnez 10 points de vie.\n", true);
+		p.getHud().getStats()[0].add(10);
 	}
 
 	private static void partir(Personnage p) {
