@@ -6,6 +6,7 @@ import Structure.Auberge;
 import Structure.Coffre;
 import Structure.Garde;
 import Structure.Heros;
+import combat.PremierBoss;
 import interaction.Saisie;
 import menu.EcranTitre;
 
@@ -16,6 +17,7 @@ public class Game {
 		player.choseClasse();
 		Saisie.clearScreenOpti();
 		
+
 		
 		Coffre.coffre(player);
 		
@@ -31,13 +33,16 @@ public class Game {
 		
 		Game.checkStats(player);
 		
+		PremierBoss.start(player);
+		checkStats(player);
+		
 		
 		
 	}
 	
 	public static void checkStats(Heros player) {
 		if(player.getVie() <=0) {
-			System.out.println("Vous êtes mort par KO !");
+			System.out.println("Vous ï¿½tes mort par KO !");
 			System.out.println("Plus de vie.");
 			System.exit(0);
 		}
@@ -48,7 +53,7 @@ public class Game {
 			player.getHud().setDefense(0);
 		}
 		if(player.getArg() < 0 ) {
-			System.out.println("Vous êtes ruiné !");
+			System.out.println("Vous ï¿½tes ruinï¿½ !");
 			System.out.println("Plus d'argent");
 			System.exit(0);
 			
