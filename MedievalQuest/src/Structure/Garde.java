@@ -12,7 +12,6 @@ public class Garde implements IEvenement {
 
 	
 	public static void garde(Personnage p) {
-		System.out.println(p.getHud());
 		AsciiArt.hero_garde();
 		System.out.println("Vous arrivez en face d'un garde menacant.");
 		String s = Saisie.saisie("Que souhaitez vous faire ? (1 - Le séduire, 2 - Le soudoyer, 3 - L'intimider, 4 - Fuir) : \n", 4);
