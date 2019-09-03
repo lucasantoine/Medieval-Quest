@@ -182,13 +182,41 @@ public class AsciiArt {
 				+ BKN + "         /____/\\____\\                 `\"\"\"\"-\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"-\"\"\"\"`");
 	}
 	
+	public static void hero_garde() {
+		System.out.println(BKN + BKN + " /\\"
+				+ BKN + " ||"
+				+ BKN + " ||"
+				+ BKN + " ||"
+				+ BKN + " ||           {}                        ,   A           {}"
+				+ BKN + " ||          .--.                      / \\, | ,        .--."
+				+ BKN + " ||         /.--.\\                    |    =|= >      /.--.\\"
+				+ BKN + " ||         |====|                     \\ /` | `       |====|"
+				+ BKN + " ||         |`::`|                      `   |         |`::`|"
+				+ BKN + "_||_    .-;`\\..../`;_.-^-._                 |     .-;`\\..../`;_.-^-._"
+				+ BKN + " /\\\\   /  |...::..|`   :   `|              /\\\\/  /  |...::..|   /:\\  `|"
+				+ BKN + " |:'\\ |   /'''::''|   .:.   |              |:'\\ |   /'''::''| /.:::.\\ |"
+				+ BKN + "  \\ /\\;-,/\\   ::  |..:::::..|               \\ /\\;-,/\\   ::  |/:::::::\\|"
+				+ BKN + "   \\ <` >  >._::_.| ':::::' |               |\\ <` >  >._::_.|   |||   |"
+				+ BKN + "    `\"\"`  /   ^^  |   ':'   |               | `\"\"`  /   ^^  |   |||   |"
+				+ BKN + "          |       \\    :    /               |       |       \\   |||   /"
+				+ BKN + "          |        \\   :   /                |       |        \\  |||  /"
+				+ BKN + "          |___/\\___|`-.:.-`                 |       |___/\\___|`-._.-`"
+				+ BKN + "           \\_ || _/                         |        \\_ || _/"
+				+ BKN + "           <_ >< _>                         |        <_ >< _>"
+				+ BKN + "           |  ||  |                         |        |  ||  |"
+				+ BKN + "           |  ||  |                         |        |  ||  |"
+				+ BKN + "          _\\.:||:./                         |       _\\.:||:./_"
+				+ BKN + "         /____/\\____\\                       |      /____/\\____\\");
+	}
+	
 	public static void main(String[] args) {
-		/*AsciiArt.sorciere();
-		AsciiArt.mendiant();
-		AsciiArt.hero();*/
-		AsciiArt.coffre();
-		/*AsciiArt.auberge();
-		AsciiArt.garde();*/
-		AsciiArt.hero_coffre();
+		//AsciiArt.sorciere();
+		//AsciiArt.mendiant();
+		//AsciiArt.hero();
+		//AsciiArt.coffre();
+		//AsciiArt.auberge();
+		AsciiArt.garde();
+		//AsciiArt.hero_coffre();
+		AsciiArt.hero_garde();
 	}
 }
