@@ -14,7 +14,7 @@ import menu.Context;
 import menu.EcranTitre;
 
 public class Game {
-	public static String barAvancement = "\n                                    Progression : O════════⚔════⚔══⚔";
+	public static String barAvancement = "\n                                    Progression : O════════⚔════⚔══⚔\n";
 	public static void main(String[] args) {
 		while(true) {
 			EcranTitre.showHomeScreen();
@@ -84,13 +84,13 @@ public class Game {
 	}
 	
 	public static String bar(int tour) {
-		String str = "\n                                    Progression : ";
+		String str = "                                    Progression : ";
 		for(int i = 0; i <= 10; i++) {
 			if(i == 5 || i == 8 || i == 10) {
 				str += "⚔";
 			}else if(tour != i) str += "══";
 			if(i == tour) str += "O";
 		}
-		return str ;
+		return str+"\n" ;
 	}
 }
