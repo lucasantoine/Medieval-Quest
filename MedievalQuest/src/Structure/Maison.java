@@ -8,6 +8,7 @@ import util.IEvenement;
 public class Maison implements IEvenement {
 	
 	public static void maison(Personnage p) {
+		Saisie.clearScreenOpti();
 		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
 		AsciiArt.hero_maisonHantee();

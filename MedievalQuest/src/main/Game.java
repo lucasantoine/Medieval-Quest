@@ -26,8 +26,6 @@ public class Game {
 
 		int tour = 1;
 		
-		Forge.forge(player);
-		
 		while(player.getVie() >= 0 && player.getArg() >= 0 && tour <= 10) {
 			System.out.println(barAvancement);
 			if(tour == 5) {
