@@ -1,27 +1,27 @@
-#Rétrospective du sprint 4
+#RÃ©trospective du sprint 4
 
 
 ##Ce que nous avons fait durant ce sprint 
-Avancée dans un affichage correct et pratique pour l'utilisateur.
+AvancÃ©e dans un affichage correct et pratique pour l'utilisateur.
 Salle du garde et de l'auberge finies.
-Salles de boss bien avancées et système de combat opérationnel.
+Salles de boss bien avancÃ©es et systÃ¨me de combat opï¿½rationnel.
 
 
 ##Ce que nous allons faire durant le prochain sprint
-Créer de la diversité dans les salles et un magaasin pour le jeu.
+CrÃ©er de la diversitÃ© dans les salles et un magaasin pour le jeu.
 
 ##PDCA
-###Qu'avons-nous testé durant ce sprint ?
- Continuer à bien comuniquer sur ce que l'on fait et implémenter les fonctionalités au tronc commun au fur et à mesure.
+###Qu'avons-nous testÃ© durant ce sprint ?
+ Continuer Ã  bien comuniquer sur ce que l'on fait et implï¿½menter les fonctionalitÃ©s au tronc commun au fur et Ã  mesure.
 
-###Qu'avons-nous observé ?
-On à pu faire beaucoup plus de points d'effort que avant. (21 contre 12)
+###Qu'avons-nous observÃ© ?
+On a pu faire beaucoup plus de points d'effort que avant. (21 contre 12)
 
-###Quelle décision prenons nous suite à cette experience ?
-Continuer dans cette voie et réfléchir à de nouvelles fonctionnalités sur le jeu.  
+###Quelle dÃ©cision prenons nous suite Ã  cette experience ?
+Continuer dans cette voie et rÃ©flÃ©chir Ã  de nouvelles fonctionnalitÃ©s sur le jeu.  
 
 ###Qu'allons-nous tester durant les 2 prochaines heures ?
 Rien de plus.
 
-###A quoi verra-t-on que cela à fonctionné ?
-Stabilisation voir légère baisse des points d'efforts réalisés car nous devons réfléchir et se concerter sur les ajouts à faire au jeu.
+###A quoi verra-t-on que cela Ã  fonctionnÃ© ?
+Stabilisation voir lÃ©gÃ¨re baisse des points d'efforts rÃ©alisÃ©s car nous devons rÃ©flÃ©chir et se concerter sur les ajouts Ã  faire au jeu.
