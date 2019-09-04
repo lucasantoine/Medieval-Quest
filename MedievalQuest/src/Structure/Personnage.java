@@ -81,10 +81,10 @@ public abstract class Personnage {
 	public void choseClasse() {
 		Saisie.clearScreenOpti();
 		System.out.println("Quelle classe voulez-vous incarner ?");
-		System.out.println("   1 - Chevalier : 30 HP, 5  Atk, 5  Def, 20 Or.");
-		System.out.println("   2 - Assasin   : 20 HP, 15 Atk, 5  Def, 20 Or.");
-		System.out.println("   3 - Tank      : 20 HP, 5  Atk, 15 Def, 20 Or.");
-		System.out.println("   4 - Noble     : 5  HP, 5  Atk, 20 Def, 30 Or.");
+		System.out.println("   1 - Chevalier : 30 "+EStat.VIE.getSymbole()+", 5  "+ EStat.ATK.getSymbole() +", 5  "+ EStat.DEF.getSymbole() +", 20 "+EStat.ARG.getSymbole()+".");
+		System.out.println("   2 - Assasin   : 20 "+EStat.VIE.getSymbole()+", 15 "+ EStat.ATK.getSymbole() +", 5  "+ EStat.DEF.getSymbole() +", 20 "+EStat.ARG.getSymbole()+".");
+		System.out.println("   3 - Tank      : 20 "+EStat.VIE.getSymbole()+", 5  "+ EStat.ATK.getSymbole() +", 15 "+ EStat.DEF.getSymbole() +", 20 "+EStat.ARG.getSymbole()+".");
+		System.out.println("   4 - Noble     : 5  "+EStat.VIE.getSymbole()+", 5  "+ EStat.ATK.getSymbole() +", 20 "+ EStat.DEF.getSymbole()+", 30 "+EStat.ARG.getSymbole()+".");
 		String saisie = Saisie.saisie("", 4);
 		int saisieToString = Saisie.stringToInt(saisie);
 		String nomClasse = "";
