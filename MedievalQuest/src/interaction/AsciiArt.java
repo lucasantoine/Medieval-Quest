@@ -744,33 +744,5 @@ public class AsciiArt {
 				"                  `Y8888888888888P'\n" + 
 				"                       `Y88888P'");
 	}
-	
-	public static void main(String[] args) {
-		//AsciiArt.chateauFin();
-		//AsciiArt.fontaine();
-		//AsciiArt.boss1_alien();
-		//AsciiArt.boss2_sorciere();
-		//AsciiArt.bossFinal();
-		//AsciiArt.forgeron();
-		//AsciiArt.mendiant();
-		//AsciiArt.hero();
-		//AsciiArt.coffre();
-		//AsciiArt.auberge();
-		//AsciiArt.garde();
-		//AsciiArt.voleur();
-		//AsciiArt.pretre();
-		//AsciiArt.maisonHantee();
-		//AsciiArt.hero_coffre();
-		//AsciiArt.hero_garde();
-		//AsciiArt.hero_auberge();
-		//AsciiArt.hero_voleur();
-		//AsciiArt.hero_mendiant();
-		//AsciiArt.hero_boss1();
-		//AsciiArt.hero_boss2();
-		//AsciiArt.hero_bossFinal();
-		//AsciiArt.hero_forgeron();
-		//AsciiArt.hero_pretre();
-		//AsciiArt.hero_maisonHantee();
-		//AsciiArt.hero_fontaine();
-	}
+
 }
