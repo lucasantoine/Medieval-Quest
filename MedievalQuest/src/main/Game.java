@@ -14,9 +14,10 @@ import menu.Context;
 import menu.EcranTitre;
 
 public class Game {
-	public static String barAvancement = "\n                                    Progression : O════════⚔════⚔══⚔\n";
+	public static String barAvancement = "";
 	public static void main(String[] args) {
 		while(true) {
+			barAvancement = "\n                                    Progression : O════════⚔════⚔══⚔\n";
 			EcranTitre.showHomeScreen();
 			Context.showContext();
 			Heros player = new Heros();
@@ -26,7 +27,7 @@ public class Game {
 
 			int tour = 1;
 			
-			while(player.getVie() >= 0 && player.getArg() >= 0 && tour <= 10) {
+			while(player.getVie() > 0 && player.getArg() >= 0 && tour <= 10) {
 				System.out.println(barAvancement);
 				if(tour == 5) {
 					PremierBoss.start(player); 
@@ -67,9 +68,8 @@ public class Game {
 		if(p.getVie() <=0) {
 			System.out.println("Vous etes mort par KO !");
 			System.out.println("Plus de vie.");
-			Saisie.pressEnter("", true);
 			AsciiArt.gameOver();
-			System.exit(0);
+			Saisie.pressEnter("", true);
 		}
 		if(p.getAtk() <= 1) {
 			p.getHud().setAttaque(1);
@@ -80,10 +80,8 @@ public class Game {
 		if(p.getArg() < 0 ) {
 			System.out.println("Vous etes ruine !");
 			System.out.println("Plus d'argent");
-			Saisie.pressEnter("", true);
 			AsciiArt.gameOver();
-			System.exit(0);
-			
+			Saisie.pressEnter("", true);
 		}		
 	}
 	

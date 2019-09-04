@@ -21,6 +21,7 @@ public class PremierBoss implements IEvenement{
 			Combat.startCombat(player, boss, viebase);
 		}
 		Saisie.pressEnter("Vous avez vaincu la horde et le chevalier a fui le combat", false);
+		Saisie.clearScreenOpti();
 	}
 
 }
