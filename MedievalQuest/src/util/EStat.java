@@ -13,3 +13,4 @@ public enum EStat {
 		return symbole;
 	}
 }
+ 

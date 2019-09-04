@@ -88,7 +88,7 @@ public abstract class Personnage {
 		String saisie = Saisie.saisie("", 4);
 		int saisieToString = Saisie.stringToInt(saisie);
 		String nomClasse = "";
-		
+		 
 		if(saisieToString == 1) {
 			this.setHud(new Hud(30, 5, 5, 20));
 			nomClasse = "Chevalier";

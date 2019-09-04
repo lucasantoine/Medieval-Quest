@@ -23,7 +23,6 @@ public class Game {
 			Heros player = new Heros();
 			player.choseClasse();
 			Saisie.clearScreenOpti();
-			
 
 			int tour = 1;
 			
