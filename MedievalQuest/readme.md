@@ -3,7 +3,7 @@
 ###Participants
 Adrien BASSAIL  
 Geoffrey VANISCOTTE  
-Virgil FLORESTAL  
+Virgil FORESTAL  
 Lucas ANTOINE  
 Loic BOMBARD  
 
