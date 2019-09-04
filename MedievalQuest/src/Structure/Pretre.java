@@ -15,7 +15,7 @@ public class Pretre implements IEvenement {
 				"\nVous entrez dans une église où un prêtre vous propose de recevoir la bénédiction du Seigneur");
 		System.out.println("   1.Vie");
 		System.out.println("   2.Attaque");
-		System.out.println("   3.D�fense");
+		System.out.println("   3.Défense");
 		System.out.println("   4.Argent");
 		System.out.println("   5.Partir\n");
 		String s = Saisie
