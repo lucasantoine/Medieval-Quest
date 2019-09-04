@@ -4,6 +4,7 @@ import interaction.Saisie;
 
 public class EcranTitre {
 	public static void showHomeScreen() {
+		Saisie.clearScreenOpti();
 		String messageToShow ="\n\n\n\n"+ 
 				"       ▄▄▄▄███▄▄▄▄      ▄████████ ████████▄   ▄█     ▄████████  ▄█    █▄     ▄████████  ▄█            ████████▄   ███    █▄     ▄████████    ▄████████     ███          \r\n" + 
 				"      ▄██▀▀▀███▀▀▀██▄   ███    ███ ███   ▀███ ███    ███    ███ ███    ███   ███    ███ ███            ███    ███  ███    ███   ███    ███   ███    ███ ▀█████████▄      \r\n" + 

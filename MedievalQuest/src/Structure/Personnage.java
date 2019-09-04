@@ -81,10 +81,10 @@ public abstract class Personnage {
 	public void choseClasse() {
 		Saisie.clearScreenOpti();
 		System.out.println("Quelle classe voulez-vous incarner ?");
-		System.out.println("   1.Chevalier");
-		System.out.println("   2.Assasin");
-		System.out.println("   3.Tank");
-		System.out.println("   4.Noble");
+		System.out.println("   1 - Chevalier : 30 HP, 5  Atk, 5  Def, 20 Or.");
+		System.out.println("   2 - Assasin   : 20 HP, 15 Atk, 5  Def, 20 Or.");
+		System.out.println("   3 - Tank      : 20 HP, 5  Atk, 15 Def, 20 Or.");
+		System.out.println("   4 - Noble     : 5  HP, 5  Atk, 20 Def, 30 Or.");
 		String saisie = Saisie.saisie("", 4);
 		int saisieToString = Saisie.stringToInt(saisie);
 		String nomClasse = "";
