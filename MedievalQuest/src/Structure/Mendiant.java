@@ -4,12 +4,14 @@ import java.util.Random;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
+import main.Game;
 import util.IEvenement;
 
 public class Mendiant implements IEvenement {
 	public static final Random R = new Random();
 
 	public static void mendiant(Personnage p) {
+		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
 		AsciiArt.hero_mendiant();
 		System.out.println("\nAlors que vous marchez tranquillement dans la rue, un mendiant vous tire par le bras et vous implore de lui donner quelques pièces d'or. Que souhaitez-vous faire?");

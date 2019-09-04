@@ -4,6 +4,7 @@ import java.util.Random;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
+import main.Game;
 import util.IEvenement;
 
 public class Voleur implements IEvenement{
@@ -15,6 +16,7 @@ public class Voleur implements IEvenement{
 	
 	public static void voleur(Personnage p) {
 		Saisie.clearScreenOpti();
+		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
 		AsciiArt.hero_voleur();
 		System.out.println("\nVous croisez la route d'un perfide Voleur !");

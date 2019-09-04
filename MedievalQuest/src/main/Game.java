@@ -2,6 +2,7 @@ package main;
 
 
 
+import Structure.Forge;
 import Structure.Heros;
 import Structure.Personnage;
 import combat.Dragon;
@@ -14,16 +15,18 @@ import menu.Context;
 import menu.EcranTitre;
 
 public class Game {
+	public static String barAvancement = "O════════⚔════⚔══⚔";
 	public static void main(String[] args) {
 		EcranTitre.showHomeScreen();
 		Context.showContext();
 		Heros player = new Heros();
 		player.choseClasse();
-		String barAvancement = "o--------⚔----⚔--⚔";
 		Saisie.clearScreenOpti();
 		
 
 		int tour = 1;
+		
+		Forge.forge(player);
 		
 		while(player.getVie() >= 0 && player.getArg() >= 0 && tour <= 10) {
 			System.out.println(barAvancement);
@@ -86,8 +89,8 @@ public class Game {
 		for(int i = 0; i <= 10; i++) {
 			if(i == 5 || i == 8 || i == 10) {
 				str += "⚔";
-			}else if(tour != i) str += "--";
-			if(i == tour) str += "o";
+			}else if(tour != i) str += "══";
+			if(i == tour) str += "O";
 		}
 		return str ;
 	}

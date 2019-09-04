@@ -2,18 +2,20 @@ package Structure;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
+import main.Game;
 import util.IEvenement;
 
 public class Pretre implements IEvenement {
 
 	public static void pretre(Personnage p) {
+		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
 		AsciiArt.hero_pretre();
 		System.out.println(
 				"\nVous entrez dans une église où un prêtre vous propose de recevoir la bénédiction du Seigneur");
 		System.out.println("   1.Vie");
 		System.out.println("   2.Attaque");
-		System.out.println("   3.D�fense");
+		System.out.println("   3.D�fense");
 		System.out.println("   4.Argent");
 		System.out.println("   5.Partir\n");
 		String s = Saisie

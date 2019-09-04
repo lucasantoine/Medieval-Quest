@@ -4,6 +4,7 @@ import java.util.Random;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
+import main.Game;
 import util.IEvenement;
 
 public class Fontaine implements IEvenement {
@@ -11,6 +12,7 @@ public class Fontaine implements IEvenement {
 
 	public static void maison(Personnage p) {
 		Saisie.clearScreenOpti();
+		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
 		AsciiArt.hero_fontaine();
 		System.out.println("\nVous arrivez sur une place avec une fontaine en son centre. Vous remarquez les pièces brillantes qui en tapisse le fond. Que voulez vous faire ?");

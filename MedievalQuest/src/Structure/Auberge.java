@@ -4,6 +4,7 @@ import java.util.Random;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
+import main.Game;
 import util.IEvenement;
 
 public class Auberge implements IEvenement{
@@ -40,7 +41,7 @@ public class Auberge implements IEvenement{
 		if(tmp == 1) {
 			if(p.getAtk() >= 15) {
 				p.getHud().setVie(p.getVie()-2);
-				System.out.println("\nLes propriétaires de l'auberge sont bien armés, mais vous êtes assez fort pour leur faire face !");
+				System.out.println("\nLes propriï¿½taires de l'auberge sont bien armï¿½s, mais vous ï¿½tes assez fort pour leur faire face !");
 				Saisie.pressEnter("Vous ne perdez que 2pv\n", false);
 				
 			}
@@ -65,6 +66,7 @@ public class Auberge implements IEvenement{
 	
 	public static void auberge(Personnage p) {
 		Saisie.clearScreenOpti();
+		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
 		AsciiArt.hero_auberge();
 		System.out.println("\nVous arrivez devant l'auberge. Que souhaitez-vous faire ?");

@@ -4,6 +4,7 @@ import java.util.Random;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
+import main.Game;
 import util.IEvenement;
 
 public class Coffre implements IEvenement{
@@ -13,8 +14,8 @@ public class Coffre implements IEvenement{
 
 	
 	public static void coffre(Personnage p) {
+		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
-		
 		AsciiArt.hero_coffre();
 		System.out.println("\n Vous arrivez en face d'un coffre. Voulez vous prendre le risque de l'ouvrir, ou allez vous passer votre chemin ?");
 		System.out.println("   1. Ouvrir le coffre");

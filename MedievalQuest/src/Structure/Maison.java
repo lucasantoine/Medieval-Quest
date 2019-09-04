@@ -2,11 +2,13 @@ package Structure;
 
 import interaction.AsciiArt;
 import interaction.Saisie;
+import main.Game;
 import util.IEvenement;
 
 public class Maison implements IEvenement {
 	
 	public static void maison(Personnage p) {
+		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
 		AsciiArt.hero_maisonHantee();
 		System.out.println("\nVous apercevez de la lumière qui s'échappe d'une maison abandonnée depuis des années.");
