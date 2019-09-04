@@ -9,18 +9,15 @@ import util.IEvenement;
 
 public class Voleur implements IEvenement{
 
-	public static final String BKN = System.getProperty("line.separator");
 	public static final Random R = new Random();
-	private static String affichage = "";
 
-	
 	public static void voleur(Personnage p) {
 		Saisie.clearScreenOpti();
 		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
 		AsciiArt.hero_voleur();
 		System.out.println("\nVous croisez la route d'un perfide Voleur !");
-		System.out.println("   1.Voleur");
+		System.out.println("   1.Voler");
 		System.out.println("   2.Appeler la Garde");
 		System.out.println("   3.Se cacher\n");
 		String s = Saisie.saisie("", 3);

@@ -8,7 +8,6 @@ import main.Game;
 import util.IEvenement;
 
 public class Coffre implements IEvenement{
-	public static final String BKN = System.getProperty("line.separator");
 	
 	public static final Random R = new Random();
 

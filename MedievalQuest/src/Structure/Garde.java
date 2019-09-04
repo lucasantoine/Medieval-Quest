@@ -8,7 +8,6 @@ import main.Game;
 import util.IEvenement;
 
 public class Garde implements IEvenement {
-	public static final String BKN = System.getProperty("line.separator");
 	public static final Random R = new Random();
 
 	
@@ -43,7 +42,7 @@ public class Garde implements IEvenement {
 			Saisie.pressEnter("Il semble intéressé par vous et souhaite vous revoir ce soir. Il vous glisse un morceau de papier dans votre poche arrière et vous laisse passer.\n", false);	
 		} else {
 			System.out.println("\nVous pensiez vraiment pouvoir séduire un garde ? Vexé, il vous frappe au visage et vous vole 5 pièces d'or.");
-			System.out.println("Vous perdez 5 pi�ces d'or");
+			System.out.println("Vous perdez 5 pièces d'or");
 			Saisie.pressEnter("Vous perdez 5 points de vie.\n", true);
 			p.getHud().getStats()[0].add(-5);
 			p.getHud().getStats()[3].add(-5);
@@ -75,8 +74,6 @@ public class Garde implements IEvenement {
 			p.getHud().getStats()[0].add(-5);
 		}
 	}
-	
-	
 	
 	private static void fuir(Personnage p) {
 		System.out.println("\nVous prenez la fuite !");

@@ -21,7 +21,7 @@ public class Combat {
 		else if(ennemi.getVie() > 0) AsciiArt.vieBoss1();
 		else AsciiArt.vieBoss0();
 
-		String s = Saisie.saisie("Que decidez vous de faire ( 1 - Attaquer, 2 - Defendre) : \n", 2);
+		String s = Saisie.saisie("Que décidez vous de faire ? ( 1 - Attaquer, 2 - Défendre) : \n", 2);
 		int choix = Saisie.stringToInt(s);
 		if(choix == 1) player.setAttaqueBool(true);
 		if(choix == 2) player.setAttaqueBool(false); 

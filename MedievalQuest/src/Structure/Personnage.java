@@ -114,8 +114,6 @@ public abstract class Personnage {
 		
 	}
 
-	public abstract void getImage();
-
 	public boolean isAttaque() {
 		return attaque;
 	}
