@@ -44,9 +44,9 @@ public class Game {
 				barAvancement = bar(tour);
 			}
 			
-			if(tour > 10) {
+			if(tour > 10 && player.getVie() > 0) {
 				Saisie.clearScreenOpti();
-				Saisie.pressEnter("Vous avez terrasse le terrible dragon ! Le village vous acclame comme leur nouveau hero.", true);
+				Saisie.pressEnter("     Vous avez terrasse le terrible dragon ! \n     Le village vous acclame comme leur nouveau hero.", true);
 				AsciiArt.chateauFin();
 				Saisie.pressEnter("", true);
 				Saisie.clearScreenOpti();
