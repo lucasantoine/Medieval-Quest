@@ -17,7 +17,7 @@ public class Voleur implements IEvenement{
 		System.out.println(p.getHud());
 		AsciiArt.hero_voleur();
 		System.out.println("\nVous croisez la route d'un perfide Voleur !");
-		System.out.println("   1.Voler");
+		System.out.println("   1.Le voler");
 		System.out.println("   2.Appeler la Garde");
 		System.out.println("   3.Se cacher\n");
 		String s = Saisie.saisie("", 3);
@@ -52,25 +52,25 @@ public class Voleur implements IEvenement{
 	private static void appelerLaGarde(Personnage p) {
 		System.out.println("\nVous appelez la Garde à votre secours");
 		if(p.getDef()>=10) {
-			System.out.println("Le Voleur etait deja bien assez impressionner par votre Carisme ! Il pris donc la fuite en laissant tomber sa bourse...");
+			System.out.println("Le Voleur etait deja bien assez impressionné par votre Charisme ! Il prit donc la fuite en laissant tomber sa bourse...");
 			Saisie.pressEnter("Or +10\n", false);
 			p.getHud().getStats()[3].add(10);
 		} else {
-			System.out.println("Votre frèle corp fut si rapide à voler que le Voleur etait deja bien loin quand la Garde arriva... Un garde pensa donc que vous mentiez et vous frappa.");
+			System.out.println("Votre frèle corps fut si rapide à voler que le Voleur etait deja bien loin quand la Garde arriva... Un garde pensa que vous mentiez et vous frappa.");
 			Saisie.pressEnter("PV -5\n", false);
 			p.getHud().getStats()[0].add(-5);
 		}
 	}
 	
 	private static void seCacher(Personnage p) {
-		System.out.println("\nVous prenez décidez de vous cacher");
+		System.out.println("\nVous décidez de vous cacher");
 		if(p.getDef() <= 10) {
-			System.out.println("Votre armure legère vous a permis de ne pas vous faire reperer. vous avez pu voir ou le Voleur entère son butin !");
+			System.out.println("Votre armure legère vous a permis de ne pas vous faire reperer. vous avez pu voir ou le Voleur enterre son butin !");
 			Saisie.pressEnter("Or +10\n", false);
 			p.getHud().getStats()[3].add(+10);
 		} else {
 			System.out.println("Votre armure imposante vous protège certe des lames mais ici elle a permis au Voleur de vous reperer. Il pris la fuite en faisant tomber un gantelet !");
-			Saisie.pressEnter("Or +10\n", false );
+			Saisie.pressEnter("Def +10\n", false );
 			p.getHud().getStats()[2].add(+10);
 		}
 	}
