@@ -1,6 +1,7 @@
 package Structure;
 
 import affichage.Hud;
+import interaction.AsciiArt;
 import interaction.Saisie;
 import util.EStat;
 import util.Effet;
@@ -86,18 +87,33 @@ public abstract class Personnage {
 		System.out.println("   4.Noble");
 		String saisie = Saisie.saisie("", 4);
 		int saisieToString = Saisie.stringToInt(saisie);
+		String nomClasse = "";
 		
 		if(saisieToString == 1) {
 			this.setHud(new Hud(30, 5, 5, 20));
+			nomClasse = "Chevalier";
 		}else if(saisieToString == 2) {
 			this.setHud(new Hud(20, 15, 5, 20));
+			nomClasse = "Assassin";
 		}else if(saisieToString == 3) {
 			this.setHud(new Hud(20, 5, 15, 20));
+			nomClasse = "Tank";
 		}else if(saisieToString == 4) {
 			this.setHud(new Hud(5, 5, 20, 30));
+			nomClasse = "Noble";
 		}
+		
+		Personnage.afficherPersonnageDebut(nomClasse);
 	}
 	
+	private static void afficherPersonnageDebut(String nomClasse) {
+		// TODO Auto-generated method stub
+		Saisie.clearScreenOpti();
+		AsciiArt.hero();
+		Saisie.pressEnter("\n     Voici votre " + nomClasse + " ! ", false);
+		
+	}
+
 	public abstract void getImage();
 
 	public boolean isAttaque() {
