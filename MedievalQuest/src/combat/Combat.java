@@ -12,7 +12,7 @@ public class Combat {
 	
 	public static void startCombat(Personnage player, Personnage ennemi, int viebase) {
 		Random r = new Random();
-		System.out.println("Joueur :\n"+player.getHud().toString()+"\nEnnemi :");
+		System.out.println(" Joueur :\n"+player.getHud().toString()+"\n Ennemi :");
 		
 		if(ennemi.getVie() > (viebase/5)*4) AsciiArt.vieBoss5();
 		else if(ennemi.getVie() > (viebase/4)*3) AsciiArt.vieBoss4();
