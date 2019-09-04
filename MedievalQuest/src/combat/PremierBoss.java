@@ -12,7 +12,7 @@ public class PremierBoss implements IEvenement{
 		Saisie.clearScreenOpti();
 		System.out.println("Lors de votre croisade, vous vous faites arrêté par la sorciere du roi accompagnée d'une horde de betes sauvages qu'il lache sur vous.\n"
 				+ "Vous n'avez pas d'autre choix que de sortir les armes");
-		Heros boss = new Heros(20, 5, 3, 50);
+		Heros boss = new Heros(30, 5, 3, 50);
 		
 		int viebase = boss.getVie(); 
 		

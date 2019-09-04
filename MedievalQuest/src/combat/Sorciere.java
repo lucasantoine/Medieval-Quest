@@ -13,7 +13,7 @@ public class Sorciere {
 		System.out.println("Vous arrivez dans le chateau du roi, la sorcière vous y attendait et vous a tendu un piege.");
 		Saisie.pressEnter("Vous perdez la moitié de votre defense", true);
 		p.setDefense(p.getDef()/2);
-		Heros boss = new Heros(50, 3, 3, 50);
+		Heros boss = new Heros(50, 3, 10, 50);
 		
 		int viebase = boss.getVie();
 		 
