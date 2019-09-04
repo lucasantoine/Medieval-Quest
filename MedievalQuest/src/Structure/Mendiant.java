@@ -11,6 +11,7 @@ public class Mendiant implements IEvenement {
 	public static final Random R = new Random();
 
 	public static void mendiant(Personnage p) {
+		Saisie.clearScreenOpti();
 		System.out.println(Game.barAvancement);
 		System.out.println(p.getHud());
 		AsciiArt.hero_mendiant();
