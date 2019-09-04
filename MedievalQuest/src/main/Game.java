@@ -67,6 +67,8 @@ public class Game {
 		if(p.getVie() <=0) {
 			System.out.println("Vous etes mort par KO !");
 			System.out.println("Plus de vie.");
+			Saisie.pressEnter("", true);
+			AsciiArt.gameOver();
 			System.exit(0);
 		}
 		if(p.getAtk() <= 1) {
@@ -78,6 +80,8 @@ public class Game {
 		if(p.getArg() < 0 ) {
 			System.out.println("Vous etes ruine !");
 			System.out.println("Plus d'argent");
+			Saisie.pressEnter("", true);
+			AsciiArt.gameOver();
 			System.exit(0);
 			
 		}		
