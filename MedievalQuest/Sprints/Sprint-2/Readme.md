@@ -1,31 +1,31 @@
-#Rétrospective du sprint 2
+#RÃ©trospective du sprint 2
 
 Nom du scrum master du sprint :
 
 ##Ce que nous avons fait durant ce sprint 
-Avancée sur l' HUD et l'évènement de coffre. Pas de démo livrable réalisée.
+AvancÃ©e sur l' HUD et l'Ã©vÃ¨nement de coffre. Pas de dÃ©mo livrable rÃ©aliÃ©e.
 
 ##Ce que nous allons faire durant le prochain sprint
 Regrouper nos bouts de code pour avoir un moteur de base solide et fonctionnel.  
-Quand le moteur sera bon et posé et si on à assez de temps, se consentrer sur les prochains évènements à créer.
+Quand le moteur sera bon et posÃ© et si on Ã  assez de temps, se consentrer sur les prochains Ã©vÃ¨nements Ã  crÃ©er.
 
 
 ##PDCA
-###Qu'avons-nous testé durant ce sprint ?
-Plus de comulication dans le groupe.
+###Qu'avons-nous testÃ© durant ce sprint ?
+Plus de comunication dans le groupe.
 
-###Qu'avons-nous observé ?
-Le groupe comunique mieux et nous n'avons presque plus de redondance dans le code que nous créons.  
-Nous avons été pris de court par le temps et n'avons pas pu donner de démo pour l'utilisateur.  
+###Qu'avons-nous observÃ© ?
+Le groupe comunique mieux et nous n'avons presque plus de redondance dans le code que nous crÃ©ons.  
+Nous avons Ã©tÃ© pris de court par le temps et n'avons pas pu donner de dÃ©mo pour l'utilisateur.  
 Nous n'avions pas bien compris le placement et le nomage des taches.  
-Done correspond donc bien à une tache qui est réalisée et prete à fonctionner pour l'utilisateur.
+Done correspond donc bien Ã  une tache qui est rÃ©alisÃ©e et prete Ã  fonctionner pour l'utilisateur.
 
-###Quelle décision prenons nous suite à cette experience ?
-Tester et implémenter nos petits bouts de code dès qu'ils sont finis et prêts pour éviter d'être pris de court 5 min avant la démo.
+###Quelle dÃ©cision prenons nous suite Ã  cette experience ?
+Tester et implÃ©menter nos petits bouts de code dÃ¨s qu'ils sont finis et prÃªts pour Ã©viter d'Ãªtre pris de court 5 min avant la dÃ©mo.
 
 ###Qu'allons-nous tester durant les 2 prochaines heures ?
-Renomer certains de nos post it pour pouvoir avoir une tache qui parle plus à l'utilisateur.   
-Mettre le post it dans Done seulement quand il sera testé et réelement implémenté dans la brique de jeu principale.
+Renomer certains de nos post it pour pouvoir avoir une tache qui parle plus Ã  l'utilisateur.   
+Mettre le post it dans Done seulement quand il sera testÃ© et rÃ©element implÃ©mentÃ© dans la brique de jeu principale.
 
-###A quoi verra-t-on que cela à fonctionné ?
-Une démo fonctionelle et complète en resortira et nous aurons beaucoup de taches prêtes à êtres livrées à l'utilisateur.
+###A quoi verra-t-on que cela Ã  fonctionnÃ© ?
+Une dÃ©mo fonctionelle et complÃ¨te en resortira et nous aurons beaucoup de taches prÃªtes Ã  Ãªtres livrÃ©es Ã  l'utilisateur.
