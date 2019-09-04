@@ -2,7 +2,6 @@ package main;
 
 
 
-import Structure.Forge;
 import Structure.Heros;
 import Structure.Personnage;
 import combat.Dragon;
@@ -17,49 +16,51 @@ import menu.EcranTitre;
 public class Game {
 	public static String barAvancement = "O════════⚔════⚔══⚔";
 	public static void main(String[] args) {
-		EcranTitre.showHomeScreen();
-		Context.showContext();
-		Heros player = new Heros();
-		player.choseClasse();
-		Saisie.clearScreenOpti();
-		
-
-		int tour = 1;
-		
-		while(player.getVie() >= 0 && player.getArg() >= 0 && tour <= 10) {
-			System.out.println(barAvancement);
-			if(tour == 5) {
-				PremierBoss.start(player); 
-				checkStats(player);
-			}else if(tour == 8) {
-				Sorciere.start(player);
-				checkStats(player);
-			}else if(tour == 10) {
-				Dragon.star(player);
-				checkStats(player);
-			}else{ 
-				Evenement.launchRandomEvent(player);
-			}
-			tour++;
-			barAvancement = bar(tour);
-		}
-		if(tour > 10) {
+		while(true) {
+			EcranTitre.showHomeScreen();
+			Context.showContext();
+			Heros player = new Heros();
+			player.choseClasse();
 			Saisie.clearScreenOpti();
-			System.out.println("Vous avez terrassez le terrible dragon ! Le village vous acclame comme leur nouveau hero.");
-			AsciiArt.chateauFin();
-			System.out.println("    ███      ▄██████▄      ▀█████████▄     ▄████████      ▄████████  ▄██████▄  ███▄▄▄▄       ███      ▄█  ███▄▄▄▄   ███    █▄     ▄████████ ████████▄      \n" + 
-					"▀█████████▄ ███    ███       ███    ███   ███    ███     ███    ███ ███    ███ ███▀▀▀██▄ ▀█████████▄ ███  ███▀▀▀██▄ ███    ███   ███    ███ ███   ▀███     \n" + 
-					"   ▀███▀▀██ ███    ███       ███    ███   ███    █▀      ███    █▀  ███    ███ ███   ███    ▀███▀▀██ ███▌ ███   ███ ███    ███   ███    █▀  ███    ███     \n" + 
-					"    ███   ▀ ███    ███      ▄███▄▄▄██▀   ▄███▄▄▄         ███        ███    ███ ███   ███     ███   ▀ ███▌ ███   ███ ███    ███  ▄███▄▄▄     ███    ███     \n" + 
-					"    ███     ███    ███     ▀▀███▀▀▀██▄  ▀▀███▀▀▀         ███        ███    ███ ███   ███     ███     ███▌ ███   ███ ███    ███ ▀▀███▀▀▀     ███    ███     \n" + 
-					"    ███     ███    ███       ███    ██▄   ███    █▄      ███    █▄  ███    ███ ███   ███     ███     ███  ███   ███ ███    ███   ███    █▄  ███    ███     \n" + 
-					"    ███     ███    ███       ███    ███   ███    ███     ███    ███ ███    ███ ███   ███     ███     ███  ███   ███ ███    ███   ███    ███ ███   ▄███     \n" + 
-					"   ▄████▀    ▀██████▀      ▄█████████▀    ██████████     ████████▀   ▀██████▀   ▀█   █▀     ▄████▀   █▀    ▀█   █▀  ████████▀    ██████████ ████████▀      \n" + 
-					"                                                                                                                                                        ");
+			
+
+			int tour = 1;
+			
+			while(player.getVie() >= 0 && player.getArg() >= 0 && tour <= 10) {
+				System.out.println(barAvancement);
+				if(tour == 5) {
+					PremierBoss.start(player); 
+					checkStats(player);
+				}else if(tour == 8) {
+					Sorciere.start(player);
+					checkStats(player);
+				}else if(tour == 10) {
+					Dragon.star(player);
+					checkStats(player);
+				}else{ 
+					Evenement.launchRandomEvent(player);
+				}
+				tour++;
+				barAvancement = bar(tour);
+			}
+			
+			if(tour > 10) {
+				Saisie.clearScreenOpti();
+				Saisie.pressEnter("Vous avez terrassez le terrible dragon ! Le village vous acclame comme leur nouveau hero.", true);
+				AsciiArt.chateauFin();
+				Saisie.pressEnter("", true);
+				Saisie.clearScreenOpti();
+				Saisie.pressEnter("    ███      ▄██████▄      ▀█████████▄     ▄████████      ▄████████  ▄██████▄  ███▄▄▄▄       ███      ▄█  ███▄▄▄▄   ███    █▄     ▄████████ ████████▄      \n" + 
+						"▀█████████▄ ███    ███       ███    ███   ███    ███     ███    ███ ███    ███ ███▀▀▀██▄ ▀█████████▄ ███  ███▀▀▀██▄ ███    ███   ███    ███ ███   ▀███     \n" + 
+						"   ▀███▀▀██ ███    ███       ███    ███   ███    █▀      ███    █▀  ███    ███ ███   ███    ▀███▀▀██ ███▌ ███   ███ ███    ███   ███    █▀  ███    ███     \n" + 
+						"    ███   ▀ ███    ███      ▄███▄▄▄██▀   ▄███▄▄▄         ███        ███    ███ ███   ███     ███   ▀ ███▌ ███   ███ ███    ███  ▄███▄▄▄     ███    ███     \n" + 
+						"    ███     ███    ███     ▀▀███▀▀▀██▄  ▀▀███▀▀▀         ███        ███    ███ ███   ███     ███     ███▌ ███   ███ ███    ███ ▀▀███▀▀▀     ███    ███     \n" + 
+						"    ███     ███    ███       ███    ██▄   ███    █▄      ███    █▄  ███    ███ ███   ███     ███     ███  ███   ███ ███    ███   ███    █▄  ███    ███     \n" + 
+						"    ███     ███    ███       ███    ███   ███    ███     ███    ███ ███    ███ ███   ███     ███     ███  ███   ███ ███    ███   ███    ███ ███   ▄███     \n" + 
+						"   ▄████▀    ▀██████▀      ▄█████████▀    ██████████     ████████▀   ▀██████▀   ▀█   █▀     ▄████▀   █▀    ▀█   █▀  ████████▀    ██████████ ████████▀      \n" + 
+						"                                                                                                                                                        ", true);
+			}
 		}
-		
-		
-		
 	}
 	
 	public static void checkStats(Personnage p) {
