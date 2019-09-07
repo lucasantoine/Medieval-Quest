@@ -16,7 +16,7 @@ public class Forge {
 
 			p.getHud().setArgent(p.getArg()-20);
 			System.out.println("\nVous avez acheté la super épée");
-			Saisie.pressEnter("Attaque *2 !\n", false);
+			Saisie.pressEnter(" -> Attaque *2 !\n", false);
 		}
 		else {
 			Saisie.pressEnter("\nVous êtes bien trop pauvre pour acheter cette belle épée\n", false);
@@ -29,7 +29,7 @@ public class Forge {
 			p.getHud().setDefense(p.getDef()*2);
 			p.getHud().setArgent(p.getArg()-25);
 			System.out.println("\nVous avez acheté le magnifique bouclier");
-			Saisie.pressEnter("Défense *2 !\n", false);
+			Saisie.pressEnter(" -> Défense *2 !\n", false);
 		}
 		else {
 			Saisie.pressEnter("\nVous êtes bien trop pauvre pour acheter cette magnifique épée\n", false);
@@ -44,9 +44,9 @@ public class Forge {
 		AsciiArt.hero_forgeron();
 		System.out.println("\nVous arrivez devant une imposante Forge. Que souhaitez-vous faire ?");
 		System.out.println("   1. Acheter une super épée");
-		System.out.println("      Coute 20$, Attaque *2");
+		System.out.println("      Coute 20$ -> Attaque *2");
 		System.out.println("   2. Acheter le magnifique bouclier");
-		System.out.println("      Coute 25$, Défense *2");
+		System.out.println("      Coute 25$ -> Défense *2");
 		System.out.println("   3. Laisser tomber, je suis assez pauvre");
 		String s = Saisie.saisie("", 3);
 		int choix = Saisie.stringToInt(s);

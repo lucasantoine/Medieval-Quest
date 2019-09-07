@@ -15,8 +15,10 @@ public class Dragon {
 		Scanner sc = new Scanner(System.in);
 		Saisie.clearScreenOpti();
 		System.out.println(p.getHud());
-		System.out.println("Vous entrez dans l'antre du terrible, Tartampion le dragon !\n"
-				+ "Vous sortez votre epee et vous le provoquez en lui disant : (Entrez une phrase de votre choix)\n");
+		Saisie.pressEnter("\nVous entrez dans la salledu Trône quand tout à coup...", false);
+		Saisie.pressEnter("Le roi Tartampion se transforme vous appercoit et se transforme en Dragon !", false);
+		
+		System.out.println("\nVous sortez votre epee et vous le provoquez en lui disant : (Entrez une phrase de votre choix)\n");
 		String phrase = sc.nextLine();
 
 		Heros boss = new Heros(100, 15, 20, 42);
