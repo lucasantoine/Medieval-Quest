@@ -28,4 +28,4 @@ Continuer sur cette voie.
 Continuer sur cette voie.  
 
 ### A quoi verra-t-on que cela à fonctionné ?
-Régularité sur les points d'effort réalisés ou une diminution des points d'efforts réalisés du à la réflection sur les ajouts éventuels à faire au jeu.  
+Régularité sur les points d'effort réalisés ou une diminution des points d'efforts réalisés du à la réflexion sur les ajouts éventuels à faire au jeu.  
