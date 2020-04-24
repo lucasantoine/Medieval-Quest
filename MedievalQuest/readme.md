@@ -1,11 +1,11 @@
-##Equipe 10
+## Equipe 10
 
-###Participants
+### Participants
 Adrien BASSAIL  
 Geoffrey VANISCOTTE  
 Virgil FORESTAL  
 Lucas ANTOINE  
 Loic BOMBARD  
 
-###Nom Du Projet
+### Nom Du Projet
 Medieval Quest
