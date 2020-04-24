@@ -2,4 +2,4 @@
 
 ### Ce projet a été réalisé en suivant la méthodologie Agile.
 
-Il s'agit d'un jeu d'aventure sur terminal réalisé lors de ma seconde année de DUT Informatique à l'IUT A de Lille.
+Il s'agit d'un jeu d'aventure sur terminal réalisé lors de ma seconde année de DUT Informatique à l'IUT A de Lille. Vous pouvez retrouver le résumé de nos sprints dans l'arborescence du projet.
